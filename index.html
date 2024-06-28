@@ -8,150 +8,175 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<style>
-    /* -- -------------- MAIN ---------------- - */
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0%;
-        height: 100%;
-        padding-left: 40px;
-        padding-right: 40px;
-        gap: 30px;
-        overflow-x: hidden
-    }
+    <style>
+        /* -- -------------- MAIN ---------------- - */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0 40px;
+            gap: 30px;
+            overflow-x: hidden;
+        }
 
-    section {
-        border: 1px solid black;
-        width: 100%;
-        height: 300px;
-    }
+        header, section, footer {
+            border: 1px solid black;
+            width: 100%;
+        }
 
-    header {
-        border: 1px solid black;
-        width: 100%;
-        height: 200px;
-    }
+        header {
+            height: auto;
+            padding: 10px 0;
+        }
 
-    footer {
-        position: relative;
-        border: 1px solid black;
-        width: 100%;
-        height: 300px;
-    }
+        section {
+            height: 300px;
+        }
 
-    .ignore-padding {
-        padding-left: -40px;
-        padding-right: -40px;
-        width: calc(100% + 80px);
-    }
+        footer {
+            height: 300px;
+        }
 
-    /* -- -------------- NAV -------------------- - */
-    .menu1{
-        display: flex;
-        justify-content: space-around;
-        /* ou space-between, flex-start, flex-end */
-        align-items: center;
-        /* Alinha os itens verticalmente ao centro */
-    }
-    .menu {
-        display: flex;
-        justify-content: space-between, flex-start, flex-end;
-        /* ou space-between, flex-start, flex-end */
-        align-items: center;
-        /* Alinha os itens verticalmente ao centro */
-    }
+        .ignore-padding {
+            padding-left: -40px;
+            padding-right: -40px;
+            width: calc(100% + 80px);
+        }
 
-    .menu div {
-        padding: 10px;
-        /* Adiciona algum espaçamento ao redor dos itens */
-    }
-button{
-    border-radius: 5px;
-    color: white;
-    background-color:#C92071;
-}
-    /* -- -------------- NAV -------------------- - */
+        /* -- -------------- NAV -------------------- - */
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
+        .menu1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-    /* -- -------------- HERO/CARROSSEL -------------------- - */
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5px; /* Ajuste o espaçamento aqui conforme necessário */
+        }
 
+        .menu div {
+            padding: 5px; /* Reduza o padding aqui conforme necessário */
+        }
 
-    /* -- -------------- HERO/CARROSSEL -------------------- - */
+        button {
+            border-radius: 5px;
+            color: white;
+            background-color: #C92071;
+            width: 123.12px;
+            height: 43.2px;
+        }
 
+        .btn-link {
+            color: #C92071;
+        }
 
-    /* -- -------------- COLEÇÕES -------------------- - */
+        .bt {
+            color: black;
+        }
 
+        .div1 {
+            color: #C92071;
+        }
 
-    /* -- -------------- COLEÇÕES -------------------- - */
+        .div2 {
+            padding-top: 40px;
+        }
 
+        .nav {
+            padding-top: 15px;
+        }
 
-    /* -- -------------- PRODUTOS -------------------- - */
+        .search-container {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
 
+        .search-container input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
 
-    /* -- -------------- PRODUTOS -------------------- - */
+        .search-container button {
+            background: #ccc;
+            border: none;
+            padding: 10px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
 
+        .search-container button i {
+            color: #333;
+        }
+        /* -- -------------- NAV -------------------- - */
 
-    /* -- -------------- DESTAQUES -------------------- - */
+        /* -- -------------- HERO/CARROSSEL -------------------- - */
+        /* -- -------------- HERO/CARROSSEL -------------------- - */
 
+        /* -- -------------- COLEÇÕES -------------------- - */
+        /* -- -------------- COLEÇÕES -------------------- - */
 
-    /* -- -------------- DESTAQUES -------------------- - */
+        /* -- -------------- PRODUTOS -------------------- - */
+        /* -- -------------- PRODUTOS -------------------- - */
 
+        /* -- -------------- DESTAQUES -------------------- - */
+        /* -- -------------- DESTAQUES -------------------- - */
 
-
-    /* -- -------------- FOOTER -------------------- - */
-
-
-    /* -- -------------- FOOTER -------------------- - */
-</style>
+        /* -- -------------- FOOTER -------------------- - */
+        /* -- -------------- FOOTER -------------------- - */
+    </style>
 </head>
 
 <body>
     <!-- -------------- NAV ---------------- -->
     <header>
         <nav>
-            <div class="menu1">
+            <div class="menu1 div2">
                 <div>
                     <img src="images/logo.png" alt="Logo">
                 </div>
-                <div>
-                    <input type="search">
+                <div class="search-container">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-link">Cadastre-se</button>
+                    <button type="button" class="btn btn-link bt">Cadastre-se</button>
                 </div>
                 <div>
                     <button>Entrar</button>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-link"><i class="bi bi-cart-dash"></i></button>
+                    <button type="button" class="btn btn-link fs-3 div1"><i class="bi bi-cart-dash"></i></button>
                 </div>
             </div>
 
-            <div class="menu">
-                <div>
-                    Home
-                </div>
-                <div>
-                    Produtos
-                </div>
-                <div>
-                    Categorias
-                </div>
-                <div>
-                    Meus Pedidos
-                </div>
-                <div>
-                    Contatos
-                </div>
+            <div class="menu nav">
+                <div>Home</div>
+                <div>Produtos</div>
+                <div>Categorias</div>
+                <div>Meus Pedidos</div>
+                <div>Contatos</div>
             </div>
-
         </nav>
     </header>
     <!-- --------------------------------- -->
-
 
     <!-- ---------- HERO/CARROSSEL ------- -->
     <section class="ignore-padding">
@@ -159,39 +184,27 @@ button{
     </section>
     <!-- --------------------------------- -->
 
-
     <!-------------- COLEÇÕES --------------->
     <section>
-        <div>
-            COLEÇÕES
-        </div>
+        <div>COLEÇÕES</div>
     </section>
     <!-- -------------------------------- -->
 
     <!-------------- PRODUTOS --------------->
     <section>
-        <div>
-            PRODUTOS
-        </div>
+        <div>PRODUTOS</div>
     </section>
-
     <!---------------------------------------->
 
     <!-------------- DESTAQUES --------------->
     <section>
-        <div>
-            DESTAQUES
-        </div>
+        <div>DESTAQUES</div>
     </section>
-
     <!---------------------------------------->
-
 
     <!-------------- FOOTER --------------->
     <footer class="ignore-padding">
-        <div>
-            FOOTER
-        </div>
+        <div>FOOTER</div>
     </footer>
     <!------------------------------------->
 </body>
