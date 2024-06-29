@@ -79,7 +79,11 @@
       text-align: left;
     }
 
-    .destaques-conteiner1 {
+    .destaques-conteiner-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
       width: 405px;
       height: 251px;
       top: 971px;
@@ -87,9 +91,14 @@
       gap: 0px;
       border-radius: 8px;
       opacity: 0px;
+      background: rgba(216, 227, 242, 1);
     }
 
-    .destaques-conteiner2 {
+    .destaques-conteiner-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
       width: 405px;
       height: 251px;
       top: 971px;
@@ -97,9 +106,14 @@
       gap: 0px;
       border-radius: 8px;
       opacity: 0px;
+      background: rgba(216, 227, 242, 1);
     }
 
-    .destaques-conteiner3 {
+    .destaques-conteiner-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
       width: 405px;
       height: 251px;
       top: 971px;
@@ -107,7 +121,38 @@
       gap: 0px;
       border-radius: 8px;
       opacity: 0px;
+      background: rgba(216, 227, 242, 1);
     }
+
+    .btn {
+      width: 153px;
+      height: 48px;
+      gap: 0px;
+      opacity: 0px;
+      background: rgba(245, 245, 245, 1);
+      color: rgba(201, 32, 113, 1);
+      font-weight: bold;
+      border: none;
+    }
+
+    .btn:hover {
+      background: rgba(201, 32, 113, 1);
+      color: rgba(245, 245, 245, 1);
+    }
+
+    .promo {
+      width: Hug (96px);
+      height: Hug (32px);
+      top: 100px;
+      left: 130px;
+      padding: 5px 15px 5px 15px;
+      gap: 10px;
+      border-radius: 29px;
+      opacity: 0px;
+      background: rgba(231, 255, 134, 1);
+      font-weight: bold;
+    }
+
 
     /* -- -------------- DESTAQUES -------------------- - */
 
@@ -153,21 +198,31 @@
   <!-------------- DESTAQUES --------------->
   <section>
     <div class="destaques">DESTAQUES</div>
-    <div class="destaques-conteiner">
-      <div class="">
-        <h3 class="bg-primary-subtle text-primary-emphasis" class="destaques-conteiner1">
+    <div class="d-flex justify-content-evenly">
+      <div class="destaques-conteiner-1">
+        <div class="promo">30% OFF</div>
+        <h3>
           Novo drop Supreme
         </h3>
+        <button type="button" class="btn btn-secondary">Comprar</button>
+        <div><!-- Colocar a img star-wars-camisa.png --></div>
       </div>
-      <h3 class="bg-primary-subtle text-primary-emphasis" class="destaques-conteiner2">
-        Coleção Adidas
-      </h3>
-    </div>
-    <div>
-      <h3 class="bg-primary-subtle text-primary-emphasis" class="destaques-conteiner3">
-        Novo Beats Bass
-      </h3>
-    </div>
+      <div class="destaques-conteiner-2">
+        <div class="promo">30% OFF</div>
+        <h3>
+          Coleção Adidas
+        </h3>
+        <button type="button" class="btn btn-secondary">Comprar</button>
+        <div><!-- Colocar a img ddd.png --></div>
+      </div>
+      <div class="destaques-conteiner-3">
+        <div class="promo">30% OFF</div>
+        <h3>
+          Novo Beats Bass
+        </h3>
+        <button type="button" class="btn btn-secondary">Comprar</button>
+        <div><!-- Colocar a img fone.png --></div>
+      </div>
     </div>
   </section>
 
