@@ -4,209 +4,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Minha Loja Online</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Estilos customizados -->
     <style>
-        /* -- -------------- MAIN ---------------- - */
+        /* Estilos gerais */
         body {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 0;
+            height: 100vh;
             padding: 0 40px;
             gap: 30px;
             overflow-x: hidden;
         }
 
-        header, section, footer {
-            border: 1px solid black;
-            width: 100%;
-        }
-
+        /* Estilos da barra de navegação */
         header {
-            height: auto;
-            padding: 10px 0;
-        }
-
-        section {
-            height: 300px;
-        }
-
-        footer {
-            height: 300px;
-        }
-
-        .ignore-padding {
-            padding-left: -40px;
-            padding-right: -40px;
-            width: calc(100% + 80px);
-        }
-
-        /* -- -------------- NAV -------------------- - */
-        nav {
+            width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 10px;
-        }
-
-        .menu1 {
-            display: flex;
-            justify-content: space-around;
             align-items: center;
-            flex-wrap: wrap;
         }
 
-        .menu {
+        .navbar {
+            background-color: #333;
+            border-color: #333;
+            color: #fff;
+            padding-top: 20px; /* Aumenta o espaço acima da barra de navegação */
+            padding-bottom: 20px; /* Aumenta o espaço abaixo da barra de navegação */
+        }
+
+        .navbar-brand img {
+            height: 50px; /* Ajuste a altura conforme necessário */
+            vertical-align: middle; /* Alinhe verticalmente */
+        }
+
+        .search-and-buttons {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 5px; /* Ajuste o espaçamento aqui conforme necessário */
+            margin-top: 10px;
         }
 
-        .menu div {
-            padding: 5px; /* Reduza o padding aqui conforme necessário */
+        .search-and-buttons input[type="text"] {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 15px;
         }
 
-        button {
-            border-radius: 5px;
+        .search-and-buttons .btn {
+            margin-right: 15px;
+        }
+
+        .cart-icon {
+            font-size: 24px;
+            position: relative;
+        }
+
+        .cart-icon::after {
+            content: '?';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: red;
             color: white;
-            background-color: #C92071;
-            width: 123.12px;
-            height: 43.2px;
-        }
-
-        .btn-link {
-            color: #C92071;
-        }
-
-        .bt {
-            color: black;
-        }
-
-        .div1 {
-            color: #C92071;
-        }
-
-        .div2 {
-            padding-top: 40px;
-        }
-
-        .nav {
-            padding-top: 15px;
-        }
-
-        .search-container {
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
             display: flex;
             align-items: center;
-            width: 300px;
-            border: 2px solid #ccc;
-            border-radius: 5px;
+            justify-content: center;
         }
 
-        .search-container input {
-            flex: 1;
-            padding: 10px;
-            border: none;
-            border-radius: 5px 0 0 5px;
-            outline: none;
+        /* Estilos da navegação */
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 10px;
         }
 
-        .search-container button {
-            background: #ccc;
-            border: none;
-            padding: 10px;
-            border-radius: 0 5px 5px 0;
-            cursor: pointer;
+        .nav-links ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
-        .search-container button i {
-            color: #333;
+        .nav-links ul li {
+            margin: 0 15px;
         }
-        /* -- -------------- NAV -------------------- - */
 
-        /* -- -------------- HERO/CARROSSEL -------------------- - */
-        /* -- -------------- HERO/CARROSSEL -------------------- - */
+        .nav-links ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
 
-        /* -- -------------- COLEÇÕES -------------------- - */
-        /* -- -------------- COLEÇÕES -------------------- - */
+        /* Estilos das seções */
+        section {
+            border: 1px solid black;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px; /* Espaçamento entre as seções */
+        }
 
-        /* -- -------------- PRODUTOS -------------------- - */
-        /* -- -------------- PRODUTOS -------------------- - */
+        /* Estilos do rodapé */
+        footer {
+            border: 1px solid black;
+            width: 100%;
+            height: 300px;
+        }
 
-        /* -- -------------- DESTAQUES -------------------- - */
-        /* -- -------------- DESTAQUES -------------------- - */
-
-        /* -- -------------- FOOTER -------------------- - */
-        /* -- -------------- FOOTER -------------------- - */
+        /* Ajuste para ignorar o padding extra do body */
+        .ignore-padding {
+            margin-left: -40px;
+            margin-right: -40px;
+            width: calc(100% + 80px);
+        }
     </style>
 </head>
 
 <body>
-    <!-- -------------- NAV ---------------- -->
+    <!-- Barra de navegação -->
     <header>
-        <nav>
-            <div class="menu1 div2">
-                <div>
-                    <img src="images/logo.png" alt="Logo">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="#">
+                            <img src="images/logo.png" alt="Logo da Loja">
+                        </a>
+                    </div>
+                    <div class="search-and-buttons">
+                        <input type="text" class="form-control" placeholder="Pesquisar produto...">
+                        <a href="#" class="btn btn-link">Cadastre-se</a>
+                        <a href="#" class="btn btn-danger">Entrar</a>
+                        <span class="glyphicon glyphicon-shopping-cart cart-icon"></span>
+                    </div>
                 </div>
-                <div class="search-container">
-                    <input type="text" placeholder="Search...">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                <!-- Fim da lista de links -->
+                <div class="nav-links">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Categorias</a></li>
+                        <li><a href="#">Meus Pedidos</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-link bt">Cadastre-se</button>
-                </div>
-                <div>
-                    <button>Entrar</button>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-link fs-3 div1"><i class="bi bi-cart-dash"></i></button>
-                </div>
-            </div>
-
-            <div class="menu nav">
-                <div>Home</div>
-                <div>Produtos</div>
-                <div>Categorias</div>
-                <div>Meus Pedidos</div>
-                <div>Contatos</div>
             </div>
         </nav>
     </header>
-    <!-- --------------------------------- -->
 
-    <!-- ---------- HERO/CARROSSEL ------- -->
-    <section class="ignore-padding">
-        <div>HERO</div>
+    <!-- Hero/Carrossel -->
+    <section>
+        <div>HERO/CARROSSEL</div>
     </section>
-    <!-- --------------------------------- -->
 
-    <!-------------- COLEÇÕES --------------->
+    <!-- Coleções -->
     <section>
         <div>COLEÇÕES</div>
     </section>
-    <!-- -------------------------------- -->
 
-    <!-------------- PRODUTOS --------------->
+    <!-- Produtos -->
     <section>
         <div>PRODUTOS</div>
     </section>
-    <!---------------------------------------->
 
-    <!-------------- DESTAQUES --------------->
+    <!-- Destaques -->
     <section>
         <div>DESTAQUES</div>
     </section>
-    <!---------------------------------------->
 
-    <!-------------- FOOTER --------------->
+    <!-- Rodapé -->
     <footer class="ignore-padding">
         <div>FOOTER</div>
     </footer>
-    <!------------------------------------->
+
 </body>
 
 </html>
