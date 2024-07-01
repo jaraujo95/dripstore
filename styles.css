@@ -1,0 +1,152 @@
+
+        /* Estilos gerais */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+            padding: 0 40px;
+            gap: 30px;
+            overflow-x: hidden;
+        }
+
+        /* Estilos da barra de navegação */
+        header {
+            width: 100%;
+            
+              
+            
+        }
+
+        .form-control{
+            width: 500px;
+            margin-top: 20px;
+        }
+
+        .navbar {
+            background-color: #fff; /* Altera o fundo para branco */
+            border-color: #fff;
+            color: #C92071;
+            padding-top: 10px; /* Ajusta o espaçamento superior */
+            padding-bottom: 10px; /* Ajusta o espaçamento inferior */
+        }
+
+        .navbar-brand img {
+            height: 50px; /* Ajuste a altura conforme necessário */
+            vertical-align: middle; /* Alinhe verticalmente */
+        }
+
+        .search-and-buttons {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .search-and-buttons input[type="text"] {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 15px;
+        }
+
+        .search-and-buttons .btn {
+            margin-right: 15px;
+        }
+
+        .cart-icon {
+            font-size: 24px;
+            position: relative;
+        }
+
+        .cart-icon::after {
+            content: '?';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #C92071;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilos da navegação */
+        .nav-links {
+            display: flex;
+            justify-content: flex-start; /* Alinha os links à esquerda */
+            width: 100%;
+            margin-top: 5px; /* Diminui o espaçamento acima do menu */
+        }
+
+        .nav-links ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links ul li {
+            margin: 0 10px; /* Diminui o espaçamento entre os itens do menu */
+        }
+
+        .nav-links ul li a {
+            text-decoration: none;
+            color: #C92071; /* Altera a cor dos links para preto */
+            font-weight: bold;
+        }
+         /* Estilos adicionais para a barra de navegação */
+         .navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .navbar-center {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar-right {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           gap: 1rem;
+        }
+
+        /* Estilos das seções */
+        section {
+            border: 1px solid black;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px; /* Espaçamento entre as seções */
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            border: 1px solid black;
+            width: 100%;
+            height: 300px;
+        }
+
+        /* Ajuste para ignorar o padding extra do body */
+        .ignore-padding {
+            margin-left: -40px;
+            margin-right: -40px;
+            width: calc(100% + 80px);
+        }
+
+    

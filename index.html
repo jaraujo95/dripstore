@@ -7,125 +7,10 @@
     <title>Minha Loja Online</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles.css"/>
     <!-- Estilos customizados -->
-    <style>
-        /* Estilos gerais */
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            height: 100vh;
-            padding: 0 40px;
-            gap: 30px;
-            overflow-x: hidden;
-        }
-
-        /* Estilos da barra de navegação */
-        header {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .navbar {
-            background-color: #333;
-            border-color: #333;
-            color: #fff;
-            padding-top: 20px; /* Aumenta o espaço acima da barra de navegação */
-            padding-bottom: 20px; /* Aumenta o espaço abaixo da barra de navegação */
-        }
-
-        .navbar-brand img {
-            height: 50px; /* Ajuste a altura conforme necessário */
-            vertical-align: middle; /* Alinhe verticalmente */
-        }
-
-        .search-and-buttons {
-            display: flex;
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        .search-and-buttons input[type="text"] {
-            padding: 5px 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-right: 15px;
-        }
-
-        .search-and-buttons .btn {
-            margin-right: 15px;
-        }
-
-        .cart-icon {
-            font-size: 24px;
-            position: relative;
-        }
-
-        .cart-icon::after {
-            content: '?';
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background: red;
-            color: white;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Estilos da navegação */
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            margin-top: 10px;
-        }
-
-        .nav-links ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav-links ul li {
-            margin: 0 15px;
-        }
-
-        .nav-links ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
-
-        /* Estilos das seções */
-        section {
-            border: 1px solid black;
-            width: 100%;
-            height: 300px;
-            margin-bottom: 20px; /* Espaçamento entre as seções */
-        }
-
-        /* Estilos do rodapé */
-        footer {
-            border: 1px solid black;
-            width: 100%;
-            height: 300px;
-        }
-
-        /* Ajuste para ignorar o padding extra do body */
-        .ignore-padding {
-            margin-left: -40px;
-            margin-right: -40px;
-            width: calc(100% + 80px);
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -133,17 +18,19 @@
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
-                <div class="navbar-header">
-                    <div class="navbar-brand">
-                        <a href="#">
+                <div class="navbar-content">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
                             <img src="images/logo.png" alt="Logo da Loja">
                         </a>
                     </div>
-                    <div class="search-and-buttons">
-                        <input type="text" class="form-control" placeholder="Pesquisar produto...">
-                        <a href="#" class="btn btn-link">Cadastre-se</a>
-                        <a href="#" class="btn btn-danger">Entrar</a>
-                        <span class="glyphicon glyphicon-shopping-cart cart-icon"></span>
+                    <div class="navbar-center">
+                        <input type="search" class="form-control" placeholder="Pesquisar produto..."/>
+                    </div>
+                    <div class="navbar-right">
+                        <a href="#" class="btn btn-link" style="margin-right: 15px;">Cadastre-se</a>
+                        <a href="#" class="btn btn-danger" style="margin-right: 15px;">Entrar</a>
+                        <i class="bi bi-cart-dash"></i>
                     </div>
                 </div>
                 <!-- Fim da lista de links -->
@@ -159,30 +46,30 @@
         </nav>
     </header>
 
-    <!-- Hero/Carrossel -->
+    <!-- Hero/Carrossel
     <section>
         <div>HERO/CARROSSEL</div>
     </section>
 
-    <!-- Coleções -->
+   
     <section>
         <div>COLEÇÕES</div>
     </section>
 
-    <!-- Produtos -->
+    
     <section>
         <div>PRODUTOS</div>
     </section>
 
-    <!-- Destaques -->
+    
     <section>
         <div>DESTAQUES</div>
     </section>
 
-    <!-- Rodapé -->
+    
     <footer class="ignore-padding">
         <div>FOOTER</div>
-    </footer>
+    </footer>  -->
 
 </body>
 
