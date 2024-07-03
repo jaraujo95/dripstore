@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
 }
 
 body {
@@ -11,59 +10,108 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 40px;
     gap: 30px;
     overflow-x: hidden;
 }
 
-/* Estilos da barra de navegação */
 header {
     width: 100%;
-
-
-
-
 }
 
 .form-control {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin-top: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .navbar {
     background-color: #fff;
-    /* Altera o fundo para branco */
-    border-color: #fff;
-    color: #C92071;
-    padding-top: 10px;
-    /* Ajusta o espaçamento superior */
-    padding-bottom: 10px;
-    /* Ajusta o espaçamento inferior */
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
 }
 
 .navbar-brand img {
     height: 50px;
-    /* Ajuste a altura conforme necessário */
     vertical-align: middle;
-    /* Alinhe verticalmente */
 }
 
-.search-and-buttons {
+.navbar-content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    width: 100%;
 }
 
-.search-and-buttons input[type="text"] {
-    padding: 5px 10px;
-    border: 1px solid #ccc;
+.navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-right a,
+.cart-icon {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #C92071;
+    padding: 10px 20px;
     border-radius: 4px;
-    margin-right: 15px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.search-and-buttons .btn {
-    margin-right: 15px;
+.navbar-right .btn-link:hover,
+.navbar-right .btn-danger:hover {
+    background-color: #C92071;
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
+    margin: 0 10px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #C92071;
+    font-weight: bold;
+}
+
+.nav-links ul li a:hover {
+    color: #ffffff;
+    background-color: #C92071;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
 .cart-icon {
@@ -86,79 +134,25 @@ header {
     justify-content: center;
 }
 
-/* Estilos da navegação */
-.nav-links {
-    display: flex;
-    justify-content: flex-start;
-    /* Alinha os links à esquerda */
-    width: 100%;
-    margin-top: 5px;
-    /* Diminui o espaçamento acima do menu */
-}
-
-.nav-links ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links ul li {
-    margin: 0 10px;
-    /* Diminui o espaçamento entre os itens do menu */
-}
-
-.nav-links ul li a {
-    text-decoration: none;
-    color: #C92071;
-    /* Altera a cor dos links para preto */
-    font-weight: bold;
-}
-
-/* Estilos adicionais para a barra de navegação */
-.navbar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.navbar-center {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.navbar-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-/* CSS media query dentro de um stylesheet */
+/* CSS media query para telas menores */
 @media (max-width: 600px) {
     .navbar-right {
-        display: none
+        display: none;
     }
 
-    .btn btn-link {
-        display: none
+    .form-control {
+        width: 100%;
     }
 
-    .btn btn-danger {
-        display: none
+    .nav-links {
+        display: none;
     }
 
-
-.nav-links{
-    display: none
+    .navbar-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
-}
-
-
 
 /* Estilos das seções */
 section {
@@ -166,7 +160,6 @@ section {
     width: 100%;
     height: 300px;
     margin-bottom: 20px;
-    /* Espaçamento entre as seções */
 }
 
 /* Estilos do rodapé */
