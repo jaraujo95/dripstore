@@ -7,10 +7,11 @@
     <title>Document</title>
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
+
         /* -- -------------- MAIN ---------------- - */
         /* body {
             display: flex;
@@ -65,89 +66,131 @@
 
 
         /* -- -------------- COLEÇÕES -------------------- - */
-        #colecao{
+        #colecao {
             margin: 20px 0 20px 0;
-            background-color: rgb(60, 87, 110);
             display: flex;
             flex-direction: column;
             height: 1000px;
-;
+
         }
-        .grup-01{
-            background-color: brown;
+
+        .grup-01 {
+
             display: flex;
-            border: 1px solid black;
-            justify-content: space-around;
+
+            justify-content: center;
+            gap: 20px;
             height: 200px;
         }
-        .img-grup-1{
+
+        .img-grup-1 {
             width: 200px;
         }
-        .sec-panes{
-            
+
+        .sec-panes {
             display: flex;
-            
+            box-shadow: 1px 0 5px 0 rgb(255, 252, 252);
             background-color: #D8E3F2;
             align-items: center;
             overflow: hidden;
             height: 200px;
             width: 400px;
             border-radius: 6px;
-            padding: 5px 0 5px 0;
-            
-           
-            
+            padding: 20px;
+            padding-top: 60px;
+
         }
-        .blu{
-            width: 320px;
+
+        .blu {
+            width: 410px;
         }
-        .sec-panes .blusa{
+
+        .sec-panes .blusa {
             position: relative;
-         
             transform: rotate(-20deg);
-            top: 80px;
-            left: 205px;
+            top: 105px;
+            left: 170px;
+
 
 
 
         }
-        .titulo{
+
+        .titulo {
             position: absolute;
             display: flex;
             flex-direction: column;
             width: 200px;
             z-index: 1;
-            margin-left: 45px;
-            gap: 15px;
+            margin-left: -10px;
+            gap: 5px;
+            padding: 15px;
+            padding-top: 10px;
+
+
         }
-        .oferta{
+
+        .oferta {
             font-weight: bold;
             font-size: 20px;
-            border: 1px solid black;
             padding: 10px;
             width: 100px;
             text-align: center;
             border-radius: 50px;
             background-color: #E7FF86;
-          
+
         }
-        .produto{
+
+        .produto {
             font-size: 35px;
             width: 200px;
             font-weight: bold;
-  
+
         }
-        .btn-comprar{
+
+        .btn-comprar {
             background-color: rgb(202, 39, 39);
+            width: 150px;
+            height: 45px;
+            border-radius: 5px;
+            background-color: white;
             border: none;
-            padding: 15px;
+            color: rgb(198, 20, 80);
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 10px;
 
 
         }
-        
+
+        .tenis {
+            position: relative;
+            transform: scaleX(-1) rotate(5deg);
+            left: 155px;
+            width: 300px;
+            top: 20px;
+        }
+
+        .fone {
+            position: relative;
+            transform: rotate(45deg);
+            width: 250px;
+            left: 190px;
+        }
+
+        .cl-1 {
+            justify-self: center;
+        }
+
+        .difente {
+
+            margin-left: -10px;
+
+        }
+
         /* -- -------------- COLEÇÕES -------------------- - */
-     
-       
+
+
         /* -- -------------- PRODUTOS -------------------- - */
 
 
@@ -192,60 +235,60 @@
 
     <!-------------- COLEÇÕES --------------->
     <section id="colecao">
-            <p class="cl-1">Coleçoes em destaque</p>
-            <div class="grup-01">
-                    <div class="sec-panes">
-                        <div class="titulo">
-                            <p class="oferta">30% OFF</p>
-                            <h1 class="produto">Nova drop Supreme</h1>
-                            <button class="btn-comprar">Comprar</button>
-                        </div>
-                        <div class="blusa">
-                            <img class="img-grup-1 blu" src="images/colecao/142e724e412fea4471b52bbaf0ee4a67.png"
-                                alt="imagem de blusa">
-                            </div>
-                    </div>
-            
-                    <div class="sec-panes">
-                        <div class="titulo">
-                            <p class="oferta">30% OFF</p>
-                            <p>Colecao Adidas</p>
-                            <button>Comprar</button>
-                        </div>
-                        <div><img class="img-grup-1" src="images/colecao/90dc1fa5c7c729e7018c5282d02ddbca.png"
-                                alt="imagem de tenis "></div>
-                    </div>
-            
-                    <div class="sec-panes">
-                        <div class="titulo">
-                            <p class="oferta">30% OFF</p>
-                            <p>Nova Beats Bass</p>
-                            <button>Comprar</button>
-                        </div>
-                        <div><img class="img-grup-1" src="images/colecao/9a48e0e33e95f4dd626d8c00b8d4d927.png"
-                                alt="imagem de fone "></div>
-                    </div>
-                
-            </div>
-            <p>Colecoes em destaque</p>
-            <div class="grup-02">
-            
-                <div class="circulo">
-                    <p>Camisetas</p>
+        <p class="cl-1">Coleçoes em destaque</p>
+        <div class="grup-01">
+            <div class="sec-panes">
+                <div class="titulo">
+                    <p class="oferta">30% OFF</p>
+                    <h1 class="produto">Nova drop Supreme</h1>
+                    <button class="btn-comprar">Comprar</button>
                 </div>
-                <div class="circulo">
-                    <p>Calca</p>
-                </div>
-                <div class="circulo">
-                    <p>Bones</p>
-                </div>
-                <div class="circulo">
-                    <p>Headphones</p>
-                </div>
-                <div class="circulo">
-                    <p>Tenis</p>
+                <div class="blusa">
+                    <img class="img-grup-1 blu" src="images/colecao/142e724e412fea4471b52bbaf0ee4a67.png"
+                        alt="imagem de blusa">
                 </div>
             </div>
+
+            <div class="sec-panes">
+                <div class="titulo difente">
+                    <p class="oferta">30% OFF</p>
+                    <h1 class="produto">Colecao Adidas</h1>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div><img class="img-grup-1 tenis tenis2" src="images/colecao/90dc1fa5c7c729e7018c5282d02ddbca.png"
+                        alt="imagem de tenis "></div>
+            </div>
+
+            <div class="sec-panes">
+                <div class="titulo difente">
+                    <p class="oferta">30% OFF</p>
+                    <h1 class="produto">Nova Beats Bass</h1>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div><img class="img-grup-1 fone" src="images/colecao/9a48e0e33e95f4dd626d8c00b8d4d927.png"
+                        alt="imagem de fone "></div>
+            </div>
+
+        </div>
+        <p>Colecoes em destaque</p>
+        <div class="grup-02">
+
+            <div class="circulo">
+                <p>Camisetas</p>
+            </div>
+            <div class="circulo">
+                <p>Calca</p>
+            </div>
+            <div class="circulo">
+                <p>Bones</p>
+            </div>
+            <div class="circulo">
+                <p>Headphones</p>
+            </div>
+            <div class="circulo">
+                <p>Tenis</p>
+            </div>
+        </div>
     </section>
     <!-- -------------------------------- -->
 
