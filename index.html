@@ -7,10 +7,11 @@
     <title>Document</title>
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
+
         /* -- -------------- MAIN ---------------- - */
         /* body {
             display: flex;
@@ -65,89 +66,149 @@
 
 
         /* -- -------------- COLEÇÕES -------------------- - */
-        #colecao{
+        #colecao {
             margin: 20px 0 20px 0;
-  
             display: flex;
             flex-direction: column;
             height: 1000px;
-;
+            background-color: aliceblue;
+            padding: 10px;
+            align-items: center;
+
         }
-        .grup-01{
-            
+        .colecao-dastaque{
             display: flex;
-           
-            justify-content: space-around;
-            height: 200px;
+            font-size: 25px;
+            margin-bottom: 10px;
+            margin-left: 70px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            align-self: baseline;
         }
-        .img-grup-1{
+
+        .colecao-primeira-parte {
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            height: 300px;
+            background-color: aqua;
+        }
+
+        .img-grup-1 {
             width: 200px;
         }
-        .sec-panes{
-            
+       
+        .card-primeira-parte {
             display: flex;
-            
+           
             background-color: #D8E3F2;
             align-items: center;
             overflow: hidden;
             height: 200px;
             width: 400px;
             border-radius: 6px;
-            padding: 5px 0 5px 0;
-            
-           
-            
+          
+            padding-top: 60px;
+
         }
-        .blu{
-            width: 320px;
-        }
-        .sec-panes .blusa{
+
+        .img-blusa {
+            width: 340.60px;
             position: relative;
-         
             transform: rotate(-20deg);
-            top: 80px;
-            left: 205px;
-
-
-
+            top: 65px;
+            left: 10px;
+           
+       
         }
-        .titulo{
-            position: absolute;
+
+        .card-img {
+            height: 350px;
+            width: 60%;
             display: flex;
             flex-direction: column;
-            width: 200px;
-            z-index: 1;
-            margin-left: 45px;
-            gap: 15px;
+            justify-content: end;
+     
+   
+
+
+
         }
-        .oferta{
+
+        .descricao-card-primeiro {
+         
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: 400px;
+            z-index: 1;
+            margin-left: -10px;
+            gap: 5px;
+            padding-left: 30px;
+            padding-top: 160px;
+          
+
+
+        }
+
+        .descricao-oferta {
             font-weight: bold;
             font-size: 20px;
-            border: 1px solid black;
             padding: 10px;
             width: 100px;
             text-align: center;
             border-radius: 50px;
             background-color: #E7FF86;
-          
+
         }
-        .produto{
+
+        .produto {
             font-size: 35px;
             width: 200px;
             font-weight: bold;
-  
+
         }
-        .btn-comprar{
+
+        .btn-comprar {
             background-color: rgb(202, 39, 39);
+            width: 150px;
+            height: 45px;
+            border-radius: 5px;
+            background-color: white;
             border: none;
-            padding: 15px;
+            color: rgb(198, 20, 80);
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 10px;
+           
 
 
         }
-        
+
+        .img-tenis {
+            position: relative;
+            transform: scaleX(-1) rotate(5deg);
+            left: -1px;
+            width: 250px;
+            top: -70px;
+        }
+
+        .img-fone {
+            position: relative;
+            transform: rotate(45deg);
+            top: -45px;
+            width: 250px;
+            left: 30px;
+        }
+
+        .colecao-dastaque {
+            justify-self: center;
+        }   
+
         /* -- -------------- COLEÇÕES -------------------- - */
-     
-       
+
+
         /* -- -------------- PRODUTOS -------------------- - */
 
 
@@ -192,60 +253,67 @@
 
     <!-------------- COLEÇÕES --------------->
     <section id="colecao">
-            <p class="cl-1">Coleçoes em destaque</p>
-            <div class="grup-01">
-                    <div class="sec-panes">
-                        <div class="titulo">
-                            <p class="oferta">30% OFF</p>
-                            <h1 class="produto">Nova drop Supreme</h1>
-                            <button class="btn-comprar">Comprar</button>
-                        </div>
-                        <div class="blusa">
-                            <img class="img-grup-1 blu" src="images/colecao/142e724e412fea4471b52bbaf0ee4a67.png"
-                                alt="imagem de blusa">
-                            </div>
-                    </div>
+        <p class="colecao-dastaque">Coleçoes em destaque</p>
+        <div class="colecao-primeira-parte">
             
-                    <div class="sec-panes">
-                        <div class="titulo">
-                            <p class="oferta">30% OFF</p>
-                            <p>Colecao Adidas</p>
-                            <button>Comprar</button>
-                        </div>
-                        <div><img class="img-grup-1" src="images/colecao/90dc1fa5c7c729e7018c5282d02ddbca.png"
-                                alt="imagem de tenis "></div>
-                    </div>
-            
-                    <div class="sec-panes">
-                        <div class="titulo">
-                            <p class="oferta">30% OFF</p>
-                            <p>Nova Beats Bass</p>
-                            <button>Comprar</button>
-                        </div>
-                        <div><img class="img-grup-1" src="images/colecao/9a48e0e33e95f4dd626d8c00b8d4d927.png"
-                                alt="imagem de fone "></div>
-                    </div>
-                
-            </div>
-            <p>Colecoes em destaque</p>
-            <div class="grup-02">
-            
-                <div class="circulo">
-                    <p>Camisetas</p>
+            <div class="card-primeira-parte">
+                <div class="descricao-card-primeiro">
+                    <p class="descricao-oferta">30% OFF</p>
+                    <h1 class="produto">Nova drop Supreme</h1>
+                    <button class="btn-comprar">Comprar</button>
                 </div>
-                <div class="circulo">
-                    <p>Calca</p>
-                </div>
-                <div class="circulo">
-                    <p>Bones</p>
-                </div>
-                <div class="circulo">
-                    <p>Headphones</p>
-                </div>
-                <div class="circulo">
-                    <p>Tenis</p>
+
+                <div class="card-img">
+                    <p>.</p>
+                    <img class="img-grup-1 img-blusa" src="images/colecao/142e724e412fea4471b52bbaf0ee4a67.png"
+                        alt="imagem de bl usa">
                 </div>
             </div>
+
+            <div class="card-primeira-parte">
+                <div class="descricao-card-primeiro difente">
+                    <p class="descricao-oferta">30% OFF</p>
+                    <h1 class="produto">Colecao Adidas</h1>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="card-img">
+                    <p>.</p>
+                    <img class="img-grup-1 img-tenis" src="images/colecao/90dc1fa5c7c729e7018c5282d02ddbca.png"
+                        alt="imagem de tenis "></div>
+            </div>
+
+            <div class="card-primeira-parte">
+                <div class="descricao-card-primeiro difente">
+                    <p class="descricao-oferta">30% OFF</p>
+                    <h1 class="produto">Nova Beats Bass</h1>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="card-img">
+                    <p>.</p>
+                    <img class="img-grup-1 img-fone" src="images/colecao/9a48e0e33e95f4dd626d8c00b8d4d927.png"
+                        alt="imagem de fo nes "></div>
+            </div>
+
+        </div>
+        <p class="colecao-dastaque">Colecoes em destaque</p>
+        <div class="colecao-segunda-parte">
+
+            <div class="card-circulo">
+                <p>Camisetas</p>
+            </div>
+            <div class="card-circulo">
+                <p>Calca</p>
+            </div>
+            <div class="card-circulo">
+                <p>Bones</p>
+            </div>
+            <div class="card-circulo">
+                <p>Headphones</p>
+            </div>
+            <div class="card-circulo">
+                <p>Tenis</p>
+            </div>
+        </div>
     </section>
     <!-- -------------------------------- -->
 
