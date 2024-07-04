@@ -71,66 +71,88 @@
             display: flex;
             flex-direction: column;
             height: 1000px;
+            background-color: aliceblue;
+            padding: 10px;
+            align-items: center;
 
         }
+        .colecao-dastaque{
+            display: flex;
+            font-size: 25px;
+            margin-bottom: 10px;
+            margin-left: 70px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            align-self: baseline;
+        }
 
-        .grup-01 {
+        .colecao-primeira-parte {
 
             display: flex;
-
             justify-content: center;
             gap: 20px;
-            height: 200px;
+            height: 300px;
+            background-color: aqua;
         }
 
         .img-grup-1 {
             width: 200px;
         }
-
-        .sec-panes {
+       
+        .card-primeira-parte {
             display: flex;
-            box-shadow: 1px 0 5px 0 rgb(255, 252, 252);
+           
             background-color: #D8E3F2;
             align-items: center;
             overflow: hidden;
             height: 200px;
             width: 400px;
             border-radius: 6px;
-            padding: 20px;
+          
             padding-top: 60px;
 
         }
 
-        .blu {
-            width: 410px;
-        }
-
-        .sec-panes .blusa {
+        .img-blusa {
+            width: 340.60px;
             position: relative;
             transform: rotate(-20deg);
-            top: 105px;
-            left: 170px;
+            top: 65px;
+            left: 10px;
+           
+       
+        }
 
+        .card-img {
+            height: 350px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+     
+   
 
 
 
         }
 
-        .titulo {
-            position: absolute;
+        .descricao-card-primeiro {
+         
             display: flex;
             flex-direction: column;
-            width: 200px;
+            width: 40%;
+            height: 400px;
             z-index: 1;
             margin-left: -10px;
             gap: 5px;
-            padding: 15px;
-            padding-top: 10px;
+            padding-left: 30px;
+            padding-top: 160px;
+          
 
 
         }
 
-        .oferta {
+        .descricao-oferta {
             font-weight: bold;
             font-size: 20px;
             padding: 10px;
@@ -159,34 +181,30 @@
             font-weight: bold;
             font-size: 15px;
             margin-top: 10px;
+           
 
 
         }
 
-        .tenis {
+        .img-tenis {
             position: relative;
             transform: scaleX(-1) rotate(5deg);
-            left: 155px;
-            width: 300px;
-            top: 20px;
+            left: -1px;
+            width: 250px;
+            top: -70px;
         }
 
-        .fone {
+        .img-fone {
             position: relative;
             transform: rotate(45deg);
+            top: -45px;
             width: 250px;
-            left: 190px;
+            left: 30px;
         }
 
-        .cl-1 {
+        .colecao-dastaque {
             justify-self: center;
-        }
-
-        .difente {
-
-            margin-left: -10px;
-
-        }
+        }   
 
         /* -- -------------- COLEÇÕES -------------------- - */
 
@@ -235,57 +253,64 @@
 
     <!-------------- COLEÇÕES --------------->
     <section id="colecao">
-        <p class="cl-1">Coleçoes em destaque</p>
-        <div class="grup-01">
-            <div class="sec-panes">
-                <div class="titulo">
-                    <p class="oferta">30% OFF</p>
+        <p class="colecao-dastaque">Coleçoes em destaque</p>
+        <div class="colecao-primeira-parte">
+            
+            <div class="card-primeira-parte">
+                <div class="descricao-card-primeiro">
+                    <p class="descricao-oferta">30% OFF</p>
                     <h1 class="produto">Nova drop Supreme</h1>
                     <button class="btn-comprar">Comprar</button>
                 </div>
-                <div class="blusa">
-                    <img class="img-grup-1 blu" src="images/colecao/142e724e412fea4471b52bbaf0ee4a67.png"
-                        alt="imagem de blusa">
+
+                <div class="card-img">
+                    <p>.</p>
+                    <img class="img-grup-1 img-blusa" src="images/colecao/142e724e412fea4471b52bbaf0ee4a67.png"
+                        alt="imagem de bl usa">
                 </div>
             </div>
 
-            <div class="sec-panes">
-                <div class="titulo difente">
-                    <p class="oferta">30% OFF</p>
+            <div class="card-primeira-parte">
+                <div class="descricao-card-primeiro difente">
+                    <p class="descricao-oferta">30% OFF</p>
                     <h1 class="produto">Colecao Adidas</h1>
                     <button class="btn-comprar">Comprar</button>
                 </div>
-                <div><img class="img-grup-1 tenis tenis2" src="images/colecao/90dc1fa5c7c729e7018c5282d02ddbca.png"
+                <div class="card-img">
+                    <p>.</p>
+                    <img class="img-grup-1 img-tenis" src="images/colecao/90dc1fa5c7c729e7018c5282d02ddbca.png"
                         alt="imagem de tenis "></div>
             </div>
 
-            <div class="sec-panes">
-                <div class="titulo difente">
-                    <p class="oferta">30% OFF</p>
+            <div class="card-primeira-parte">
+                <div class="descricao-card-primeiro difente">
+                    <p class="descricao-oferta">30% OFF</p>
                     <h1 class="produto">Nova Beats Bass</h1>
                     <button class="btn-comprar">Comprar</button>
                 </div>
-                <div><img class="img-grup-1 fone" src="images/colecao/9a48e0e33e95f4dd626d8c00b8d4d927.png"
-                        alt="imagem de fone "></div>
+                <div class="card-img">
+                    <p>.</p>
+                    <img class="img-grup-1 img-fone" src="images/colecao/9a48e0e33e95f4dd626d8c00b8d4d927.png"
+                        alt="imagem de fo nes "></div>
             </div>
 
         </div>
-        <p>Colecoes em destaque</p>
-        <div class="grup-02">
+        <p class="colecao-dastaque">Colecoes em destaque</p>
+        <div class="colecao-segunda-parte">
 
-            <div class="circulo">
+            <div class="card-circulo">
                 <p>Camisetas</p>
             </div>
-            <div class="circulo">
+            <div class="card-circulo">
                 <p>Calca</p>
             </div>
-            <div class="circulo">
+            <div class="card-circulo">
                 <p>Bones</p>
             </div>
-            <div class="circulo">
+            <div class="card-circulo">
                 <p>Headphones</p>
             </div>
-            <div class="circulo">
+            <div class="card-circulo">
                 <p>Tenis</p>
             </div>
         </div>
