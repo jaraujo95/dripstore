@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -10,114 +11,61 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    min-height: 100vh;
+    height: 100vh;
     padding: 0 40px;
     gap: 30px;
     overflow-x: hidden;
 }
 
+/* Estilos da barra de navegação */
 header {
     width: 100%;
 }
 
 .form-control {
     width: 100%;
-    max-width: 500px;
-    margin-top: 20px;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
 .navbar {
     background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-    width: 100%;
-}
-
-.navbar-header {
-    display: flex;
-    align-items: center;
+    /* Altera o fundo para branco */
+    border-color: #fff;
+    color: #C92071;
+    padding-top: 10px;
+    /* Ajusta o espaçamento superior */
+    padding-bottom: 10px;
+    /* Ajusta o espaçamento inferior */
 }
 
 .navbar-brand img {
     height: 50px;
+    /* Ajuste a altura conforme necessário */
     vertical-align: middle;
+    /* Alinhe verticalmente */
 }
 
-.navbar-content {
+.search-and-buttons {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    margin-top: 10px;
 }
 
-.navbar-center {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.navbar-right a,
-.cart-icon {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #C92071;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.navbar-right .btn-link:hover,
-.navbar-right .btn-danger:hover {
-    background-color: #C92071;
-    color: #ffffff;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 5px;
-}
-
-.nav-links ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links ul li {
-    margin: 0 10px;
-}
-
-.nav-links ul li a {
-    text-decoration: none;
-    color: #C92071;
-    font-weight: bold;
-}
-
-.nav-links ul li a:hover {
-    color: #ffffff;
-    background-color: #C92071;
+.search-and-buttons input[type="text"] {
     padding: 5px 10px;
+    border: 1px solid #ccc;
     border-radius: 4px;
+    margin-right: 15px;
 }
 
-.cart-icon {
+.search-and-buttons .btn {
+    margin-right: 15px;
+}
+
+
+/* .cart-icon {
     font-size: 24px;
     position: relative;
-}
+} */
 
 .cart-icon::after {
     content: '?';
@@ -134,25 +82,109 @@ header {
     justify-content: center;
 }
 
-/* CSS media query para telas menores */
-@media (max-width: 600px) {
+/* Estilos da navegação */
+.nav-links {
+    display: flex;
+    justify-content: flex-start;
+    /* Alinha os links à esquerda */
+    width: 100%;
+    margin-top: 5px;
+    /* Diminui o espaçamento acima do menu */
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: start;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.nav-links ul li {
+    margin: 0 10px;
+    /* Diminui o espaçamento entre os itens do menu */
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #C92071;
+    /* Altera a cor dos links para preto */
+    font-weight: bold;
+}
+
+/* Estilos adicionais para a barra de navegação */
+.navbar-content {
+    display: none;
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* as classes criadas para cada icon */
+.icon-ends {
+    display: flex;
+    margin-left: 40px;
+}
+
+.search-icon {
+    display: none;
+    margin-left: auto;
+}
+
+.list-icon {
+    display: none;
+}
+
+.nav-style:hover {
+    color: black ;
+}
+
+/* media query para tela agir quando a tela chegar a menor que 800px */
+@media (max-width: 800px) {
     .navbar-right {
+        display: none
+    }
+
+    .btn {
+        display: none
+    }
+
+    .nav-links{
+        display: none
+    }
+
+    .form-control{
         display: none;
     }
 
-    .form-control {
-        width: 100%;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
+    /* essa classe navbar-content vai reagir dessa forma com tela menor 800px */
     .navbar-content {
-        flex-direction: column;
-        align-items: flex-start;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    /* adicionei essas classes aos icons para eles aparecerem quando a tela for menor que 800px */
+    .search-icon {
+        display: block;
+    }
+
+    .list-icon {
+        display: block;
+    }
+
+    .icon-ends {
+        margin-left: 0%;
     }
 }
+
+@media (max-width: 1024px) {
+
+}
+
 
 /* Estilos das seções */
 section {
@@ -160,6 +192,7 @@ section {
     width: 100%;
     height: 300px;
     margin-bottom: 20px;
+    /* Espaçamento entre as seções */
 }
 
 /* Estilos do rodapé */
