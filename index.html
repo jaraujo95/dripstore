@@ -74,6 +74,7 @@
             background-color: #fef8f8;
             padding: 10px;
             align-items: center;
+            
 
         }
         .colecao-dastaque{
@@ -83,7 +84,14 @@
             margin-left: 70px;
             letter-spacing: 1px;
             font-weight: bold;
+      
+        }
+        .colecao-dastaque-1{
+            position: relative;
             align-self: baseline;
+            margin-bottom: 40px;
+    
+            left: 70px;
         }
 
         .colecao-primeira-parte {
@@ -198,35 +206,47 @@
             position: relative;
             transform: rotate(45deg);
             top: -45px;
-            width: 250px;
+            width: 200px;
             left: 30px;
         }
 
-        .colecao-dastaque {
+        /* .colecao-dastaque {
             justify-self: center;
+            position: relative;
+            left: 72px;
         }
+       */
         .colecao-segunda-parte{
-            background-color: red;
+           
             width: 100%;
-        
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-top: 40px;
+            gap: 40px;
         }
         .card-circulo{
             border: 1px solid white;
-            width: 200px;
+            width: 100px;
             height: 200px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: 5px;
 
         }
         .icon{
+        
             width: 100px;
             height: 100px;
-            background-color: blue;
+            border: 1px solid black;
+           
+            border-radius: 50%;
+        }
+        .titulo-circulo{
+            letter-spacing: 1px;
+            font-size: 24px;
         }
 
         /* -- -------------- COLEÇÕES -------------------- - */
@@ -276,7 +296,7 @@
 
     <!-------------- COLEÇÕES --------------->
     <section id="colecao">
-        <p class="colecao-dastaque">Coleçoes em destaque</p>
+        <p class="colecao-dastaque colecao-dastaque-1 ">Coleçoes em destaque</p>
         <div class="colecao-primeira-parte">
             
             <div class="card-primeira-parte">
@@ -321,29 +341,29 @@
         </div>
 
 
-        <p class="colecao-dastaque">Coleções em destaque</p>
+        <p class="colecao-dastaque colecao-destaque-segunda">Coleções em destaque</p>
         <div class="colecao-segunda-parte">
 
             <div class="card-circulo">
                 
                 <p class="icon">.</p>
-                <p>Camisetas</p>
+                <p class="titulo-circulo">Camisetas</p>
             </div>
             <div class="card-circulo">
                 <p class="icon">.</p>
-                <p>Calca</p>
+                <p class="titulo-circulo">Calca</p>
             </div>
             <div class="card-circulo">
                 <p class="icon">.</p>
-                <p>Bones</p>
+                <p class="titulo-circulo">Bones</p>
             </div>
             <div class="card-circulo">
                 <p class="icon">.</p>
-                <p>Headphones</p>
+                <p class="titulo-circulo">Headphones</p>
             </div>
             <div class="card-circulo">
                 <p class="icon">.</p>
-                <p>Tenis</p>
+                <p class="titulo-circulo"> Tenis</p>
             </div>
         </div>
     </section>
