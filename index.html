@@ -7,8 +7,13 @@
     <title>Document</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         /* -- -------------- MAIN ---------------- - */
-        body {
+        /* body {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -44,6 +49,7 @@
             padding-right: -40px;
             width: calc(100% + 80px);
         }
+      */
 
         /* -- -------------- ------------------- ---------------- - */
 
@@ -60,7 +66,195 @@
 
 
         /* -- -------------- COLEÇÕES -------------------- - */
+        #colecao {
+            margin: 20px 0 20px 0;
+            display: flex;
+            flex-direction: column;
+            height: 1000px;
+            background-color: #F9F8FE;
+            padding: 10px;
+            align-items: center;
+            
 
+        }
+        .colecao-dastaque{
+            display: flex;
+            font-size: 25px;
+            margin-bottom: 10px;
+            margin-left: 70px;
+            letter-spacing: 1px;
+            font-weight: bold;
+      
+        }
+        .colecao-dastaque-1{
+            position: relative;
+            align-self: baseline;
+            margin-bottom: 25px;
+    
+            left: 70px;
+        }
+
+        .colecao-primeira-parte {
+
+            display: flex;
+            justify-content: center;
+            gap: 9px;
+            height: 300px;
+         
+        }
+
+        .img-grup-1 {
+            width: 200px;
+        }
+       
+        .card-primeira-parte {
+            display: flex;
+           
+            background-color: #D8E3F2;
+            align-items: center;
+            overflow: hidden;
+            height: 200px;
+            width: 400px;
+            border-radius: 6px;
+            
+            padding-top: 60px;
+            box-shadow: 11px 14px 36px -16px rgba(187, 186, 186, 0.78);
+
+
+        }
+
+        .img-blusa {
+            width: 355.68px;
+            position: relative;
+            transform: rotate(-20deg);
+            top: 65px;
+            left: -1px;
+           
+       
+        }
+
+        .card-img {
+            height: 350px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+     
+   
+
+
+
+        }
+
+        .descricao-card-primeiro {
+         
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: 400px;
+            z-index: 1;
+            margin-left: -10px;
+            gap: 5px;
+            padding-left: 30px;
+            padding-top: 150px;
+          
+
+
+        }
+
+        .descricao-oferta {
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+            border-radius: 50px;
+            background-color: #E7FF86;
+
+        }
+
+        .produto {
+            font-size: 35px;
+            width: 200px;
+            font-weight: bold;
+
+        }
+
+        .btn-comprar {
+            background-color: rgb(202, 39, 39);
+            width: 150px;
+            height: 45px;
+            border-radius: 5px;
+            background-color: white;
+            border: none;
+            color: rgb(198, 20, 80);
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 10px;
+           
+
+
+        }
+
+        .img-tenis {
+            position: relative;
+            transform: scaleX(-1) rotate(5deg);
+            left: -1px;
+            width: 250px;
+            top: -70px;
+        }
+
+        .img-fone {
+            position: relative;
+            transform: rotate(45deg);
+            top: -45px;
+            width: 200px;
+            left: 30px;
+        }
+
+        /* .colecao-dastaque {
+            justify-self: center;
+            position: relative;
+            left: 72px;
+        }
+       */
+        .colecao-segunda-parte{
+           
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 40px;
+        }
+        .card-circulo{
+            border: 1px solid white;
+            width: 100px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+
+        }
+        .icon{
+        
+            width: 100px;
+            height: 100px;
+            
+           
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 11px 14px 36px -16px rgba(187, 186, 186, 0.78);
+        }
+        .titulo-circulo{
+            letter-spacing: 1px;
+            font-size: 15px;
+        }
 
         /* -- -------------- COLEÇÕES -------------------- - */
 
@@ -108,9 +302,77 @@
 
 
     <!-------------- COLEÇÕES --------------->
-    <section>
-        <div>
-            COLEÇÕES
+    <section id="colecao">
+        <p class="colecao-dastaque colecao-dastaque-1 ">Coleçoes em destaque</p>
+        <div class="colecao-primeira-parte">
+            
+            <div class="card-primeira-parte">
+                <div class="descricao-card-primeiro">
+                    <p class="descricao-oferta">30% OFF</p>
+                    <h1 class="produto">Nova drop Supreme</h1>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="card-img">
+                    <p>.</p>
+                    <img class="img-grup-1 img-blusa" src="images/colecao/142e724e412fea4471b52bbaf0ee4a67.png"
+                        alt="imagem de bl usa">
+                </div>
+            </div>
+
+            <div class="card-primeira-parte">
+                <div class="descricao-card-primeiro difente">
+                    <p class="descricao-oferta">30% OFF</p>
+                    <h1 class="produto">Colecao Adidas</h1>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="card-img">
+                    <p>.</p>
+                    <img class="img-grup-1 img-tenis" src="images/colecao/90dc1fa5c7c729e7018c5282d02ddbca.png"
+                        alt="imagem de tenis "></div>
+            </div>
+
+
+            <div class="card-primeira-parte">
+                <div class="descricao-card-primeiro difente">
+                    <p class="descricao-oferta">30% OFF</p>
+                    <h1 class="produto">Nova Beats Bass</h1>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="card-img">
+                    <p>.</p>
+                    <img class="img-grup-1 img-fone" src="images/colecao/9a48e0e33e95f4dd626d8c00b8d4d927.png"
+                        alt="imagem de fo nes "></div>
+            </div>
+
+        </div>
+
+
+        <p class="colecao-dastaque colecao-destaque-segunda">Coleções em destaque</p>
+        <div class="colecao-segunda-parte">
+
+            <div class="card-circulo">
+                
+                <div class="icon"><img src="images/colecao/ICONS/camiseta.png" alt=""></div>
+                <p class="titulo-circulo">Camisetas</p>
+            </div>
+            <div class="card-circulo">
+                <div class="icon"><img src="images/colecao/ICONS/calca.png" alt=""></div>
+                <p class="titulo-circulo">Calca</p>
+            </div>
+            <div class="card-circulo">
+                <div class="icon"><img src="images/colecao/ICONS/calca.png" alt=""></div>
+                <p class="titulo-circulo">Bones</p>
+            </div>
+            <div class="card-circulo">
+                <div class="icon"><img src="images/colecao/ICONS/fone.png" alt=""></div>
+                <p class="titulo-circulo">Headphones</p>
+            </div>
+            <div class="card-circulo">
+                <div class="icon"><img src="images/colecao/ICONS/fone.png" alt=""></div>
+                <p class="titulo-circulo"> Tenis</p>
+            </div>
+            <h1>PA PORRA</h1>
         </div>
     </section>
     <!-- -------------------------------- -->
