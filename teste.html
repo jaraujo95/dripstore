@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="flex flex-col items-center h-screen px-10 gap-8 overflow-x-hidden">
+    <!-- Barra de navegação -->
+    <header class="w-full">
+        <nav class="bg-white border-b border-white text-pink-600 py-2">
+            <div class="container mx-auto flex items-center justify-between p-4">
+                <div class="flex items-center justify-between">
+                    <!-- ícone de lista -->
+                    <div class="relative md:hidden">
+                        <i id="menuToggle" class="bi bi-list h4 text-black cursor-pointer"></i>
+                        <div id="menuDropdown" class="absolute hidden bg-white text-gray-800 py-2 mt-1 rounded shadow-lg">
+                            <a href="#" class="block px-4 py-2">Home</a>
+                            <a href="#" class="block px-4 py-2">Produtos</a>
+                            <a href="#" class="block px-4 py-2">Categorias</a>
+                            <a href="#" class="block px-4 py-2">Meus Pedidos</a>
+                        </div>
+                    </div>
+                    <!-- ícone de lista -->
+                    <img src="images/logo.png" alt="Logo da Loja" class="ml-4 h-12 align-middle">
+                </div>
+                <div class="flex items-center mt-2">
+                    <input type="search" class="form-input px-4 py-2 rounded-md border border-gray-300 mr-4" placeholder="Pesquisar produto...">
+                    <a href="#" class="mr-4 text-gray-300 hover:text-white">Cadastre-se</a>
+                    <a href="#" class="mr-4 bg-red-500 text-white px-4 py-2 rounded">Entrar</a>
+                    <i class="bi bi-search h4 text-white ml-4 hidden md:block"></i>
+                    <i class="bi bi-cart-dash h4 text-white ml-4"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="container mx-auto mt-5">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="https://via.placeholder.com/150" alt="Imagem de exemplo">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Título do Cartão</div>
+                    <p class="text-gray-700 text-base">Texto de exemplo para o cartão.</p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                    <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded">Botão</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero/Carrossel -->
+    <section class="bg-gray-100 py-8 border border-black w-full h-72 mb-5">
+        <div class="container mx-auto">HERO/CARROSSEL</div>
+    </section>
+
+    <!-- Coleções -->
+    <section class="py-8 border border-black w-full h-72 mb-5">
+        <div class="container mx-auto">COLEÇÕES</div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="bg-gray-100 py-8 border border-black w-full h-72 mb-5">
+        <div class="container mx-auto">PRODUTOS</div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="py-8 border border-black w-full h-72 mb-5">
+        <div class="container mx-auto">DESTAQUES</div>
+    </section>
+
+    <footer class="bg-gray-800 py-4 text-white text-center border border-black w-full h-72 mt-5">
+        <div class="container mx-auto">FOOTER</div>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            var menu = document.getElementById('menuDropdown');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
