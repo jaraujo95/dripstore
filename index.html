@@ -7,7 +7,96 @@
     <title>Minha Loja Online</title>
     <!-- Bootstrap CSS -->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesh<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minha Loja Online</title>
+        <!-- Tailwind CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            @media (min-width: 700px) {
+                .custom-lg\:flex {
+                    display: flex !important;
+                }
+                .custom-lg\:hidden {
+                    display: none !important;
+                }
+            }
+            @media (max-width: 700px) {
+                .custom-sm\:flex {
+                    display: flex !important;
+                }
+                .custom-sm\:hidden {
+                    display: none !important;
+                }
+            }
+        </style>
+    </head>
+    <body class="flex flex-col min-h-screen">
+        <!-- Barra de navegação -->
+        <header class="w-full">
+            <nav class="flex items-center justify-between p-4 bg-white">
+                <!-- Logo e Botão de Menu -->
+                <div class="flex items-center">
+                    <button class="text-xl mr-4 lg:hidden bg-white-700 text-pink-700 p-2 rounded">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <a href="#" class="flex items-center">
+                        <img src="images/logo.png" alt="Logo da Loja" class="h-13 w-13 object-contain mr-2">
+                    </a>
+                </div>
+                <!-- Input de Pesquisa (somente em telas maiores que 700px) -->
+                <div class="hidden custom-lg:flex items-center justify-center flex-grow mx-4">
+                    <input type="search" class="w-full max-w-lg p-2 border border-gray-300 rounded mx-4" placeholder="Pesquisar produto...">
+                </div>
+                <!-- Ícone de Pesquisa (somente em telas menores que 700px) -->
+               
+                <!-- Botões -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-pink-700 hidden lg:block">Cadastre-se</a>
+                    <a href="#" class="px-4 py-2 bg-pink-700 text-white rounded hidden lg:block">Entrar</a>
+                    <div class="custom-lg:hidden custom-sm:flex">
+                        <i class="bi bi-search text-pink-700 text-xl"></i>
+                    </div>
+                    <i class="bi bi-cart-dash text-pink-700 text-xl"></i>
+                   
+                </div>
+            </nav>
+            <!-- Menu Dropdown para dispositivos móveis -->
+            <div class="lg:hidden hidden flex-col space-y-2 mt-4 px-4">
+                <a href="#" class="text-pink-700">Cadastre-se</a>
+                <a href="#" class="px-4 py-2 bg-pink-700 text-white rounded">Entrar</a>
+                <ul class="flex flex-col space-y-2 text-pink-700">
+                    <li><a href="#" class="hover:text-black">Home</a></li>
+                    <li><a href="#" class="hover:text-black">Produtos</a></li>
+                    <li><a href="#" class="hover:text-black">Categorias</a></li>
+                    <li><a href="#" class="hover:text-black">Meus Pedidos</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- Conteúdo principal -->
+        <main class="w-full flex-grow p-4">
+            <!-- Conteúdo principal aqui -->
+        </main>
+        <!-- Rodapé -->
+        <footer class="w-full border-t p-4">
+            <!-- Conteúdo do rodapé aqui -->
+        </footer>
+        <script>
+            // Script para togglar o menu dropdown
+            document.querySelector('button').addEventListener('click', () => {
+                const menu = document.querySelector('.lg\\:hidden + .flex-col');
+                if (menu) {
+                    menu.classList.toggle('hidden');
+                }
+            });
+        </script>
+    </body>
+    </html>
+    eet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Estilos customizados -->
