@@ -71,16 +71,30 @@
         </div>
 
         <!-- Menu Dropdown para dispositivos móveis -->
-        <div id="menuDropdown" class="lg:hidden hidden flex-col space-y-2 mt-4 px-4">
-            <a href="#" class="text-pink-700">Cadastre-se</a> <!-- Link para cadastro -->
-            <a href="#" class="px-4 py-2 bg-pink-700 text-white rounded">Entrar</a> <!-- Botão de entrar -->
+        <div id="menuDropdown" class="lg:hidden block flex-col space-y-2 mt-4 px-4">
+           
+           
             <ul class="flex flex-col space-y-2 text-pink-700">
                 <li><a href="#" class="hover:text-black">Home</a></li>
                 <li><a href="#" class="hover:text-black">Produtos</a></li>
                 <li><a href="#" class="hover:text-black">Categorias</a></li>
                 <li><a href="#" class="hover:text-black">Meus Pedidos</a></li>
             </ul>
+            <div class="flex mt-5">
+                <a href="#" class="px-4 py-2 bg-pink-700 text-white rounded">Entrar</a> <!-- Botão de entrar -->
+                <a href="#" class="text-pink-700">Cadastre-se</a> <!-- Link para cadastro -->
+            </div>
+            
         </div>
+        <div class="flex flex-row gap-5 text-lg font-semibold">
+            <div class="space-x-4 hidden lg:block">
+                <a href="#" class="hover:text-black">Home</a>
+                <a href="#" class="hover:text-black">Produtos</a>
+                <a href="#" class="hover:text-black">Categorias</a>
+               <a href="#" class="hover:text-black">Meus Pedidos</a>
+            </div>
+        </div>
+       
     </header>
 
     <!-- Hero/Carrossel -->
