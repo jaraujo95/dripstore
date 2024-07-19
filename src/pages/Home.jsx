@@ -1,5 +1,5 @@
 import '../pages/Home.css'
-import '../pages/Section.jsx'
+import Destaques from '../components/Destaques.jsx'
 import { ArrowLeft, ArrowRight } from 'react-bootstrap-icons';
 
 function Home() {
@@ -28,6 +28,7 @@ function Home() {
 
       <section className='section'>
         <div>DESTAQUES</div>
+        <Destaques />
       </section>
 
       <footer className="footer ignore-padding">
