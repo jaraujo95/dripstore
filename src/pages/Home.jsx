@@ -20,8 +20,7 @@ function Home() {
         <div>PRODUTOS</div>
       </section>
 
-      <section className='section'>
-        <div>DESTAQUES</div>
+      <section>
         <Destaques />
       </section>
 
