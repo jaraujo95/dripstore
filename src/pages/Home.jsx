@@ -1,4 +1,5 @@
 import '../pages/Home.css'
+import '../pages/Section.jsx'
 import { ArrowLeft, ArrowRight } from 'react-bootstrap-icons';
 
 function Home() {
