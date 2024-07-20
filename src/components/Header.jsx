@@ -1,10 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/logo.png';
-import { Cart, CloudSleetFill, Crosshair, List, MenuApp, Search, X } from 'react-bootstrap-icons';
-// Função que representa o componente Header
-
-
-
+import { Cart, List, Search, X } from 'react-bootstrap-icons';
 
 function Header() {
   const [carrinho, setcarrinho] = useState(['tennis,carrinho']);
@@ -88,7 +84,8 @@ function Header() {
       </div>
 
       {/* Menu Dropdown para dispositivos móveis */}      
-      <div id="sidebar" className={`fixed inset-y-20 left-0 transform lg:hidden transition-transform bg-white duration-300 w-64 h-screen flex flex-col z-40 space-y-2 mt-4 px-4 ${isOpen ? 'translate-x-0' : '-translate-x-full'
+      <div id="sidebar" className={`fixed inset-y-20 left-0 transform lg:hidden transition-transform bg-white duration-300 w-64
+       h-screen flex flex-col z-40 space-y-2 mt-4 px-4 ${isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}>
         <div className='flex flex-col'>
           <div className='flex flex-row justify-between items-center mb-5'>
