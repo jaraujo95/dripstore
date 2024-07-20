@@ -1,63 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '../assets/logo.png';
-import  {  Cart, List, MenuApp  }  from  'react-bootstrap-icons' ;
+import { Cart, List, MenuApp } from 'react-bootstrap-icons';
 // Função que representa o componente Header
 function Header() {
-  // Use o hook useEffect para adicionar os event listeners após a montagem do componente
-  useEffect(() => {
-    const menuToggle = document.getElementById('menuToggle');
-    const searchIcon = document.getElementById('searchIcon');
-    const cartIcon = document.getElementById('cartIcon');
-    const menu = document.getElementById('menuDropdown');
-    const searchInputMobile = document.getElementById('searchInputMobile');
-
-    if (menuToggle) {
-      menuToggle.addEventListener('click', function () {
-        if (menu) {
-          menu.classList.toggle('hidden');
-        }
-      });
-    }
-
-    if (searchIcon) {
-      searchIcon.addEventListener('click', function () {
-        if (searchInputMobile) {
-          searchInputMobile.classList.toggle('hidden');
-        }
-      });
-    }
-
-    if (cartIcon) {
-      cartIcon.addEventListener('click', function () {
-        alert('Carrinho clicado!'); // Ação temporária para o clique no carrinho
-      });
-    }
-
-    // Cleanup event listeners on component unmount
-    return () => {
-      if (menuToggle) {
-        menuToggle.removeEventListener('click', function () {
-          if (menu) {
-            menu.classList.toggle('hidden');
-          }
-        });
-      }
-
-      if (searchIcon) {
-        searchIcon.removeEventListener('click', function () {
-          if (searchInputMobile) {
-            searchInputMobile.classList.toggle('hidden');
-          }
-        });
-      }
-
-      if (cartIcon) {
-        cartIcon.removeEventListener('click', function () {
-          alert('Carrinho clicado!');
-        });
-      }
-    };
-  }, []);
+  const [carrinho, setcarrinho] = useState(['tennis,carrinho']);
 
   return (
     // Header do site
@@ -68,17 +14,24 @@ function Header() {
         <div className="flex items-center">
           {/* Botão para abrir o menu em dispositivos móveis */}
           <button id="menuToggle" className="text-xl mr-4 lg:hidden bg-white-700 text-pink-700 p-2 rounded">
-            <List/>
+            <List />
           </button>
           {/* Link para a página inicial com o logo */}
           <a href="#" className="flex items-center">
-            <img src={logo} alt="Logo da Loja" className="h-13 w-13 object-contain mr-2" /> {/* Logo da loja */}
+            <img src={logo}
+              alt="Logo da Loja"
+              className="h-13 w-13 object-contain mr-2" />
+            {/* Logo da loja */}
           </a>
         </div>
 
         {/* Input de Pesquisa (somente em telas maiores que 700px) */}
-        <div id="searchInput" className=" custom-lg:flex items-center justify-center flex-grow mx-4">
-          <input type="search" className="w-full max-w-lg p-2 border border-gray-300 rounded mx-4" placeholder="Pesquisar produto..." />
+        <div id="searchInput"
+          className=" custom-lg:flex items-center justify-center flex-grow mx-4">
+          <input
+            type="search"
+            className="w-full max-w-lg p-2 border border-gray-300 rounded mx-4"
+            placeholder="Pesquisar produto..." />
         </div>
 
         {/* Botões */}
@@ -92,8 +45,30 @@ function Header() {
             <i className="bi bi-search text-pink-700 text-xl"></i>
           </div>
           {/* Ícone de carrinho */}
-          <div id="cartIcon" className="cursor-pointer">
-            <Cart className='text-pink-700 text-xl'/>
+          <div
+            id="cartIcon"
+            className="cursor-pointer relative"
+            // style={{
+            //   position: "relative"
+            // }}
+          >
+            <Cart
+              className='text-pink-700 text-xl'
+
+              onClick={() => {
+                setcarrinho([...carrinho, "Novo Item"]);
+
+              }}
+            />
+            <div className='absolute top-0 right-0 bg-red-500'
+            // style={{
+            //   position: "absolute",
+            //   top: 0,
+            //   right: 0,
+            // }}
+            >
+              {carrinho.length}
+            </div>
           </div>
         </div>
       </nav>
