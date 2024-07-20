@@ -11,7 +11,7 @@ function Destaques() {
           {/* Coleção 1 */}
           <div className="relative flex flex-col items-start justify-center  w-[405px] h-72 bg-blue-200 rounded-lg p-4">
             {/* Caixa de desconto */}
-            <div className="z-10 bg-yellow-300 px-4 py-1 rounded-full font-bold mb-2">30% OFF</div>
+            <div className="z-10 bg-lime-300 px-4 py-1 rounded-full font-bold mb-2">30% OFF</div>
            {/* Título da coleção */}
             <h3 className="z-10 text-2xl font-bold mb-2">Novo drop Supreme</h3>
             {/* Botão Comprar */}
@@ -22,7 +22,7 @@ function Destaques() {
           {/* Coleção 2 */}
           <div className="relative flex flex-col items-start justify-center w-[405px] h-72 bg-blue-200 rounded-lg p-4">
             {/* Caixa de desconto */}
-            <div className="z-10 bg-yellow-300 px-4 py-1 rounded-full font-bold mb-2">30% OFF</div>
+            <div className="z-10 bg-lime-300 px-4 py-1 rounded-full font-bold mb-2">30% OFF</div>
             {/* Título da coleção */}
             <h3 className="z-10 text-2xl font-bold mb-2">Coleção Adidas</h3>
             {/* Botão Comprar */}
@@ -33,7 +33,7 @@ function Destaques() {
           {/* Coleção 3*/}
           <div className=" relative flex flex-col items-start justify-center w-[405px] h-72 bg-blue-200 rounded-lg p-4">
             {/* Caixa de desconto */}
-            <div className="z-10 bg-yellow-300 px-4 py-1 rounded-full font-bold mb-2">30% OFF</div>
+            <div className="z-10 bg-lime-300 px-4 py-1 rounded-full font-bold mb-2">30% OFF</div>
             {/* Título da coleção */}
             <h3 className="z-10 text-2xl font-bold mb-2">Novo Beats Bass</h3>
             {/* Botão Comprar */}
