@@ -1,19 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../assets/logo.png';
-import { Cart, List, MenuApp } from 'react-bootstrap-icons';
+import { Cart, CloudSleetFill, Crosshair, List, MenuApp, Search, X } from 'react-bootstrap-icons';
 // Função que representa o componente Header
+
+
+
+
 function Header() {
   const [carrinho, setcarrinho] = useState(['tennis,carrinho']);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     // Header do site
-    <header className="w-full">
+    <header id='' className="w-full px-4 sm:px-[20px] md:px-[50px] lg:px-[70px] xl:px-[100px]">
       {/* Barra de navegação */}
-      <nav className="flex items-center justify-between p-4 bg-white">
+      <nav className="flex items-center justify-between p-4 bg-white gap-5">
         {/* Logo e Botão de Menu */}
         <div className="flex items-center">
           {/* Botão para abrir o menu em dispositivos móveis */}
-          <button id="menuToggle" className="text-xl mr-4 lg:hidden bg-white-700 text-pink-700 p-2 rounded">
+          <button id="menu-btn" onClick={toggleSidebar} className="text-xl mr-4 lg:hidden bg-white-700 text-pink-700 p-2 rounded">
             <List />
           </button>
           {/* Link para a página inicial com o logo */}
@@ -27,17 +36,17 @@ function Header() {
 
         {/* Input de Pesquisa (somente em telas maiores que 700px) */}
         <div id="searchInput"
-          className=" custom-lg:flex items-center justify-center flex-grow mx-4">
+          className="hidden sm:flex flex-row w-full items-center justify-center mx-4 rounded-full border border-slate-100 bg-slate-100 focus-within:border-red-600 focus-within:text-red-600">
           <input
-            type="search"
-            className="w-full max-w-lg p-2 border border-gray-300 rounded mx-4"
+            className="w-full p-2 mx-4 border-transparent rounded-full bg-slate-100 focus:outline-none text-black"
             placeholder="Pesquisar produto..." />
+          <Search className='mr-5'/>
         </div>
-
+        <Search className='block sm:hidden text-slate-500 hover:text-red-700'/>
         {/* Botões */}
         <div className="flex items-center space-x-4">
           {/* Link para cadastro (somente em telas grandes) */}
-          <a href="#" className="text-pink-700 hidden lg:block">Cadastre-se</a>
+          <a href="#" className="text-pink-700 w-[100px] hidden lg:block">Cadastre-se</a>
           {/* Botão de entrar (somente em telas grandes) */}
           <a href="#" className="px-4 py-2 bg-pink-700 text-white rounded hidden lg:block">Entrar</a>
           {/* Ícone de pesquisa (somente em telas pequenas) */}
@@ -60,15 +69,15 @@ function Header() {
 
               }}
             />
-            <div className='absolute top-0 right-0 bg-red-500'
-            // style={{
-            //   position: "absolute",
-            //   top: 0,
-            //   right: 0,
-            // }}
-            >
-              {carrinho.length}
-            </div>
+            {
+              carrinho.length === 1 ? '' : <div>
+                <span className="animate-ping absolute bottom-2 -right-3 h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                <div className='absolute bottom-2 -right-2 bg-red-500 rounded-full text-xs h-4 w-4 text-center' 
+                > 
+                  {carrinho.length}
+                </div>
+              </div>
+            }
           </div>
         </div>
       </nav>
@@ -78,19 +87,32 @@ function Header() {
         <input type="search" className="w-full max-w-lg p-2 border border-gray-300 rounded" placeholder="Pesquisar produto..." />
       </div>
 
-      {/* Menu Dropdown para dispositivos móveis */}
-      <div id="menuDropdown" className="lg:hidden block flex-col space-y-2 mt-4 px-4">
-        <ul className="flex flex-col space-y-2 text-pink-700">
-          <li><a href="#" className="hover:text-black">Home</a></li>
-          <li><a href="#" className="hover:text-black">Produtos</a></li>
-          <li><a href="#" className="hover:text-black">Categorias</a></li>
-          <li><a href="#" className="hover:text-black">Meus Pedidos</a></li>
-        </ul>
-        <div className="flex mt-5">
-          {/* Botão de entrar */}
-          <a href="#" className="px-4 py-2 bg-pink-700 text-white rounded">Entrar</a>
-          {/* Link para cadastro */}
-          <a href="#" className="text-pink-700">Cadastre-se</a>
+      {/* Menu Dropdown para dispositivos móveis */}      
+      <div id="sidebar" className={`fixed inset-y-20 left-0 transform lg:hidden transition-transform bg-white duration-300 w-64 h-screen flex flex-col z-40 space-y-2 mt-4 px-4 ${isOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}>
+        <div className='flex flex-col'>
+          <div className='flex flex-row justify-between items-center mb-5'>
+            <p className='text-xl font-semibold text-center' >Paginas</p>
+            <button
+              id="close-btn"
+              className="flex z-50 rounded focus:outline-none pr-5 hover:text-red-700"
+              onClick={toggleSidebar}
+            >
+              <X size={22}/>
+            </button>
+          </div>
+          <ul className="flex flex-col space-y-2 text-pink-700 font-semibold">
+            <li><a href="#" className="hover:text-black">Home</a></li>
+            <li><a href="#" className="hover:text-black">Produtos</a></li>
+            <li><a href="#" className="hover:text-black">Categorias</a></li>
+            <li><a href="#" className="hover:text-black">Meus Pedidos</a></li>
+          </ul>
+          <div className="flex flex-col items-center mt-64 gap-5 border-t-[1px] border-slate-500">
+            {/* Botão de entrar */}
+            <button href="#" className="px-4 py-2 w-36 bg-pink-700 text-white rounded mt-5">Entrar</button>
+            {/* Link para cadastro */}
+            <a href="#" className="text-pink-700">Cadastre-se</a>
+          </div>
         </div>
       </div>
 

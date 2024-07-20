@@ -7,7 +7,11 @@ import Fone from '../assets/fone.svg'
 function Destaques() {
     return(
       // Coleções em destaque
-        <div className="flex justify-evenly space-x-5">
+      <div className='flex flex-col px-4 sm:px-[20px] md:px-[50px] lg:px-[70px] xl:px-[100px]'>
+        <div>
+                <p className="text-3xl font-bold">Coleções em destaque</p>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-5 lg:flex-row lg:justify-between pt-5">
           {/* Coleção 1 */}
           <div className="relative flex flex-col items-start justify-center  w-[405px] h-72 bg-blue-200 rounded-lg p-4">
             {/* Caixa de desconto */}
@@ -42,6 +46,7 @@ function Destaques() {
               <img src={Fone} className='absolute right-0 bottom-0'/>
           </div>
         </div>
+      </div>
     );
 }
 
