@@ -14,7 +14,7 @@ function Header() {
     // Header do site
     <header id='' className="w-full px-4 sm:px-[20px] md:px-[50px] lg:px-[70px] xl:px-[100px]">
       {/* Barra de navegação */}
-      <nav className="flex items-center justify-between p-4 bg-white gap-5">
+      <nav className="flex items-center justify-between py-5 bg-white gap-5">
         {/* Logo e Botão de Menu */}
         <div className="flex items-center">
           {/* Botão para abrir o menu em dispositivos móveis */}
@@ -32,9 +32,9 @@ function Header() {
 
         {/* Input de Pesquisa (somente em telas maiores que 700px) */}
         <div id="searchInput"
-          className="hidden sm:flex flex-row w-full items-center justify-center mx-4 rounded-full border border-slate-100 bg-slate-100 focus-within:border-red-600 focus-within:text-red-600">
+          className="hidden sm:flex flex-row w-full items-center justify-center mx-4 rounded-md border border-slate-100 bg-slate-100 focus-within:border-red-600 focus-within:text-red-600">
           <input
-            className="w-full p-2 mx-4 border-transparent rounded-full bg-slate-100 focus:outline-none text-black"
+            className="w-full p-2 mx-4 border-transparent rounded-md bg-slate-100 focus:outline-none text-black"
             placeholder="Pesquisar produto..." />
           <Search className='mr-5'/>
         </div>

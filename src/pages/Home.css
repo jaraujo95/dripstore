@@ -43,3 +43,8 @@
   padding-right: -40px;
   width: calc(100% + 80px);
 }
+
+.bg-gradiente-oferta {
+  background: rgb(209, 209, 216);
+      background: linear-gradient(184deg, rgba(209, 209, 216, 1) 0%, rgba(255, 255, 255, 0.5825980050223214) 46%);
+}
