@@ -18,7 +18,7 @@ function Header() {
         {/* Logo e Botão de Menu */}
         <div className="flex items-center">
           {/* Botão para abrir o menu em dispositivos móveis */}
-          <button id="menu-btn" onClick={toggleSidebar} className="text-xl mr-4 lg:hidden bg-white-700 text-pink-700 p-2 rounded">
+          <button id="menu-btn" onClick={toggleSidebar} className="text-xl mr-4 lg:hidden bg-white-700 text-pink-500 p-2 rounded">
             <List />
           </button>
           {/* Link para a página inicial com o logo */}
@@ -32,22 +32,22 @@ function Header() {
 
         {/* Input de Pesquisa (somente em telas maiores que 700px) */}
         <div id="searchInput"
-          className="hidden sm:flex flex-row w-full items-center justify-center mx-4 rounded-md border border-slate-100 bg-slate-100 focus-within:border-red-600 focus-within:text-red-600">
+          className="hidden sm:flex flex-row w-full items-center justify-center mx-4 rounded-md border border-slate-100 bg-slate-100 focus-within:border-pink-500 focus-within:text-pink-500">
           <input
             className="w-full p-2 mx-4 border-transparent rounded-md bg-slate-100 focus:outline-none text-black"
             placeholder="Pesquisar produto..." />
           <Search className='mr-5'/>
         </div>
-        <Search className='block sm:hidden text-slate-500 hover:text-red-700'/>
+        <Search className='block sm:hidden text-slate-500 hover:text-pink-500'/>
         {/* Botões */}
         <div className="flex items-center space-x-4">
           {/* Link para cadastro (somente em telas grandes) */}
-          <a href="#" className="text-pink-700 w-[100px] hidden lg:block">Cadastre-se</a>
+          <a href="#" className="text-pink-500 w-[100px] hover:text-black hidden lg:block">Cadastre-se</a>
           {/* Botão de entrar (somente em telas grandes) */}
-          <a href="#" className="px-4 py-2 bg-pink-700 text-white rounded hidden lg:block">Entrar</a>
+          <a href="#" className="px-4 py-2 bg-pink-500 hover:bg-pink-900 text-white rounded hidden lg:block">Entrar</a>
           {/* Ícone de pesquisa (somente em telas pequenas) */}
           <div id="searchIcon" className="custom-lg:hidden custom-sm:flex cursor-pointer">
-            <i className="bi bi-search text-pink-700 text-xl"></i>
+            <i className="bi bi-search text-pink-500 text-xl"></i>
           </div>
           {/* Ícone de carrinho */}
           <div
@@ -58,7 +58,7 @@ function Header() {
             // }}
           >
             <Cart
-              className='text-pink-700 text-xl'
+              className='text-pink-500 text-xl'
 
               onClick={() => {
                 setcarrinho([...carrinho, "Novo Item"]);
@@ -67,8 +67,8 @@ function Header() {
             />
             {
               carrinho.length === 1 ? '' : <div>
-                <span className="animate-ping absolute bottom-2 -right-3 h-full w-full rounded-full bg-red-500 opacity-75"></span>
-                <div className='absolute bottom-2 -right-2 bg-red-500 rounded-full text-xs h-4 w-4 text-center' 
+                <span className="animate-ping absolute bottom-2 -right-3 h-full w-full rounded-full bg-pink-500opacity-75"></span>
+                <div className='absolute bottom-2 -right-2 bg-pink-500 rounded-full text-xs h-4 w-4 text-center' 
                 > 
                   {carrinho.length}
                 </div>
@@ -92,13 +92,13 @@ function Header() {
             <p className='text-xl font-semibold text-center' >Paginas</p>
             <button
               id="close-btn"
-              className="flex z-50 rounded focus:outline-none pr-5 hover:text-red-700"
+              className="flex z-50 rounded focus:outline-none pr-5 hover:text-pink-500"
               onClick={toggleSidebar}
             >
               <X size={22}/>
             </button>
           </div>
-          <ul className="flex flex-col space-y-2 text-pink-700 font-semibold">
+          <ul className="flex flex-col space-y-2 text-pink-500font-semibold">
             <li><a href="#" className="hover:text-black">Home</a></li>
             <li><a href="#" className="hover:text-black">Produtos</a></li>
             <li><a href="#" className="hover:text-black">Categorias</a></li>
@@ -106,15 +106,15 @@ function Header() {
           </ul>
           <div className="flex flex-col items-center mt-64 gap-5 border-t-[1px] border-slate-500">
             {/* Botão de entrar */}
-            <button href="#" className="px-4 py-2 w-36 bg-pink-700 text-white rounded mt-5">Entrar</button>
+            <button href="#" className="px-4 py-2 w-36 bg-pink-500 hover:bg-pink-900 text-white rounded mt-5">Entrar</button>
             {/* Link para cadastro */}
-            <a href="#" className="text-pink-700">Cadastre-se</a>
+            <a href="#" className="text-pink-500">Cadastre-se</a>
           </div>
         </div>
       </div>
 
       {/* Links de navegação para dispositivos grandes */}
-      <div className="flex flex-row gap-5 text-lg font-semibold text-pink-700">
+      <div className="flex flex-row gap-5 text-lg font-semibold text-pink-500">
         <div className="space-x-4 hidden lg:block">
           <a href="#" className="hover:text-black">Home</a>
           <a href="#" className="hover:text-black">Produtos</a>

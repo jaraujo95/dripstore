@@ -14,7 +14,6 @@
   justify-items: center;
   margin: 0%;
   height: 100%;
-  overflow-x: hidden;
 }
 
 .section {
@@ -38,13 +37,35 @@
   height: 300px;
 }
 
-.ignore-padding {
-  padding-left: -40px;
-  padding-right: -40px;
-  width: calc(100% + 80px);
-}
-
 .bg-gradiente-oferta {
   background: rgb(209, 209, 216);
       background: linear-gradient(184deg, rgba(209, 209, 216, 1) 0%, rgba(255, 255, 255, 0.5825980050223214) 46%);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
 }

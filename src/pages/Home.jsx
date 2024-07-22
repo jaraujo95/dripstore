@@ -5,24 +5,27 @@ import ProductListing from '../components/ProductListing.jsx';
 import Section from '../components/Section.jsx';
 import { ArrowRight } from "react-bootstrap-icons";
 import tenisOferta from '../assets/tenis-oferta-especial.svg'
+import Footer from '../components/Footer.jsx';
+import Colecao from '../components/Colecao.jsx';
+import Hero from '../components/Hero.jsx';
 
 export default function Home() {
   return (
     <div className='body'>
       <Header />
-      <section className="section mt-10">
-        <div>HERO</div>
-      </section>
+
+      <Hero/>
+      <div>
+      </div>
 
       <div className='w-full bg-slate-100 pb-24'>
-
         <Section title="Coleções em destaque">
           <Destaques />
         </Section>
-
-        <section className='section'>
-          <div>COLECAO</div>
-        </section>
+       
+        <Section titleCenter="Coleções em destaque" >
+          <Colecao/>
+        </Section>
 
         <Section title="Produtos em alta" btnTitle="Ver todos" btn={<ArrowRight size={15} />}>
           <ProductListing />
@@ -48,7 +51,7 @@ export default function Home() {
 
           <div
             className="flex flex-col gap-2 lg:py-4 items-center text-center lg:text-left lg:items-start w-full">
-            <p className="text-xl text-red-500 font-bold">
+            <p className="text-xl text-pink-500 font-bold">
               Oferta especial
             </p>
 
@@ -64,7 +67,7 @@ export default function Home() {
             </p>
             <div className="w-full px-12 sm:px-0">
               <button
-                className="bg-red-500 text-white font-bold py-2 rounded hover:bg-red-600 w-full sm:w-[250px]">
+                className="bg-pink-500 text-white font-bold py-2 rounded hover:bg-pink-900 w-full sm:w-[250px]">
                 Ver Ofertas
               </button>
             </div>
@@ -72,9 +75,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div>FOOTER</div>
-      </footer>
+      <Footer/>
     </div>
   );
 }
