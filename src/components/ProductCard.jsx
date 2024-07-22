@@ -4,7 +4,7 @@ export default function ProductCard ({desconto, img, preco, precoDesconto, marca
             <div
                 className="flex flex-col w-full h-48 sm:h-64 bg-white overflow-hidden items-center relative hover:shadow-lg">
                 <div
-                    className={`flex border-0 items-center justify-center rounded-full bg-lime-300 w-24 h-8 mt-4 ml-4 self-start ${!desconto && 'invisible'}`}>
+                    className={`flex border-0 items-center justify-center rounded-full bg-lime-300 w-24 h-8 mt-4 ml-4 font-bold self-start ${!desconto && 'invisible'}`}>
                     <p><span>{desconto}</span>% OFF</p>
                 </div>
                 <div
