@@ -79,6 +79,9 @@ export default function Hero() {
                                         src={tenis}
                                         alt="Imagem" />
                                 </div>
+                                <div className='absolute -right-10 top-10 md:right-20 md:top-20'>
+                                    <img src={ball} alt="" />
+                                </div>
                             </section>
                     </SwiperSlide>
                 </Swiper>

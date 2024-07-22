@@ -70,7 +70,7 @@ function Header() {
                 <span className="animate-ping absolute bottom-2 -right-3 h-full w-full rounded-full bg-pink-500opacity-75"></span>
                 <div className='absolute bottom-2 -right-2 bg-pink-500 rounded-full text-xs h-4 w-4 text-center' 
                 > 
-                  {carrinho.length}
+                  {carrinho.length - 1}
                 </div>
               </div>
             }
