@@ -4,12 +4,6 @@ import Tenis from '../assets/tenis.svg'
 import Fone from '../assets/fone.svg'
 
 function Destaques() {
-  // const botaoComprar = document.getElementById('botaoComprar');
-
-  // botaoComprar.addEventListener('click', function() {
-
-  // });
-
   return (
     // Coleções em destaque
     <div className="flex flex-col justify-center items-center gap-5 lg:flex-row lg:justify-between">
@@ -20,7 +14,7 @@ function Destaques() {
         {/* Título da coleção */}
         <h3 className="z-10 text-2xl font-bold mb-2">Novo drop Supreme</h3>
         {/* Botão Comprar */}
-        <button id='botaoComprar' type="button" className="btn z-10 bg-gray-100 text-pink-500 font-bold py-2 px-4 rounded-lg mb-4 w-[153px] h-[48px] hover:bg-pink-600 hover:text-white">Comprar</button>
+        <button type="button" className="btn z-10 bg-gray-100 text-pink-500 font-bold py-2 px-4 rounded-lg mb-4 w-[153px] h-[48px] hover:bg-pink-600 hover:text-white">Comprar</button>
         {/* Imagem sobre a coleção */}
         <img src={Camisa} className='absolute right-0 bottom-0' />
       </div>
@@ -31,7 +25,7 @@ function Destaques() {
         {/* Título da coleção */}
         <h3 className="z-10 text-2xl font-bold mb-2">Coleção Adidas</h3>
         {/* Botão Comprar */}
-        <button id='botaoComprar' type="button" className="btn z-10 bg-gray-100 text-pink-500 font-bold py-2 px-4 rounded-lg mb-4 w-[153px] h-[48px] hover:bg-pink-600 hover:text-white">Comprar</button>
+        <button type="button" className="btn z-10 bg-gray-100 text-pink-500 font-bold py-2 px-4 rounded-lg mb-4 w-[153px] h-[48px] hover:bg-pink-600 hover:text-white">Comprar</button>
         {/* Imagem sobre a coleção */}
         <img src={Tenis} className='absolute right-0 bottom-0' />
       </div>
@@ -42,7 +36,7 @@ function Destaques() {
         {/* Título da coleção */}
         <h3 className="z-10 text-2xl font-bold mb-2">Novo Beats Bass</h3>
         {/* Botão Comprar */}
-        <button id='botaoComprar' type="button" className="btn z-10 bg-gray-100 text-pink-500 font-bold py-2 px-4 rounded-lg mb-4 w-[153px] h-[48px] hover:bg-pink-600 hover:text-white">Comprar</button>
+        <button type="button" className="btn z-10 bg-gray-100 text-pink-500 font-bold py-2 px-4 rounded-lg mb-4 w-[153px] h-[48px] hover:bg-pink-600 hover:text-white">Comprar</button>
         {/* Imagem sobre a coleção */}
         <img src={Fone} className='absolute right-0 bottom-0' />
       </div>

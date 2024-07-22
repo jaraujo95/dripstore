@@ -5,6 +5,7 @@ import ProductListing from '../components/ProductListing.jsx';
 import Section from '../components/Section.jsx';
 import { ArrowRight } from "react-bootstrap-icons";
 import tenisOferta from '../assets/tenis-oferta-especial.svg'
+import Destaque2 from '../components/Destaque.jsx';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
 
         <Section title="Coleções em destaque">
           <Destaques />
+          <Destaque2></Destaque2>
         </Section>
 
         <section className='section'>
