@@ -7,10 +7,12 @@ import { ArrowRight } from "react-bootstrap-icons";
 import tenisOferta from '../assets/tenis-oferta-especial.svg'
 import Destaque2 from '../components/Destaque.jsx';
 
+
+
 export default function Home() {
   return (
+
     <div className='body'>
-      <Header />
       <section className="section mt-10">
         <div>HERO</div>
       </section>
@@ -74,9 +76,8 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div>FOOTER</div>
-      </footer>
+      
     </div>
+ 
   );
 }

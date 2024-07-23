@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import { Cart, List, Search, X } from 'react-bootstrap-icons';
+import { Link } from 'react-router-dom';
+
 
 function Header() {
   const [carrinho, setcarrinho] = useState(['tennis,carrinho']);
@@ -124,12 +126,14 @@ function Header() {
       {/* Links de navegação para dispositivos grandes */}
       <div className="flex flex-row gap-5 text-lg font-semibold text-black">
         <div className="space-x-4 hidden lg:block">
-          <a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Home</a>
-          <a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Produtos</a>
-          <a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Categorias</a>
-          <a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Meus Pedidos</a>
+          < Link className="hover:text-pink-500 hover:underline hover:underline-offset-8" to="/">Home</Link>
+          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8" to="produtos">Produtos</Link>
+          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8"  to="categoria">Categorias</Link>
+          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8">Meus Pedidos</Link>
         </div>
       </div>
+     
+   
     </header>
   );
 }
