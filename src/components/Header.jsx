@@ -40,7 +40,7 @@ function Header() {
             placeholder="Pesquisar produto..." />
           <Search className='mr-5'/>
         </div>
-        <Search className='block sm:hidden text-slate-500 hover:text-red-700'/>
+        <Search className='block sm:hidden text-slate-500 hover:text-pink-500'/>
         {/* Botões */}
         <div className="flex items-center space-x-4">
           {/* Link para cadastro (somente em telas grandes) */}

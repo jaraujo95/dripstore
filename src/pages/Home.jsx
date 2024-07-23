@@ -6,6 +6,7 @@ import Section from '../components/Section.jsx';
 import { ArrowRight } from "react-bootstrap-icons";
 import tenisOferta from '../assets/tenis-oferta-especial.svg'
 import Destaque2 from '../components/Destaque.jsx';
+import Footer from '../components/Footer.jsx'
 
 
 
@@ -23,10 +24,6 @@ export default function Home() {
           <Destaques />
           <Destaque2></Destaque2>
         </Section>
-
-        <section className='section'>
-          <div>COLECAO</div>
-        </section>
 
         <Section title="Produtos em alta" btnTitle="Ver todos" btn={<ArrowRight size={15} />}>
           <ProductListing />
@@ -76,7 +73,9 @@ export default function Home() {
         </div>
       </section>
 
-      
+      <footer>
+        <Footer />
+      </footer>
     </div>
  
   );
