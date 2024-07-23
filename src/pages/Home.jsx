@@ -22,10 +22,6 @@ export default function Home() {
           <Destaque2></Destaque2>
         </Section>
 
-        <section className='section'>
-          <div>COLECAO</div>
-        </section>
-
         <Section title="Produtos em alta" btnTitle="Ver todos" btn={<ArrowRight size={15} />}>
           <ProductListing />
         </Section>
