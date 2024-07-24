@@ -34,7 +34,7 @@ function Header() {
         <div id="searchInput"
           className="hidden sm:flex flex-row w-full items-center justify-center mx-4 rounded-md border border-slate-100 bg-slate-100 focus-within:border-pink-500 focus-within:text-pink-500">
           <input
-            className="w-full p-2 mx-4 border-transparent rounded-md bg-slate-100 focus:outline-none text-black"
+            className="w-full p-2 mx-4 border-transparent rounded-md bg-slate-100 focus:outline-none text-pink-500 hover:underline hover:underline-offset-8"
             placeholder="Pesquisar produto..." />
           <Search className='mr-5'/>
         </div>
@@ -42,7 +42,7 @@ function Header() {
         {/* Botões */}
         <div className="flex items-center space-x-4">
           {/* Link para cadastro (somente em telas grandes) */}
-          <a href="#" className="text-pink-500 w-[100px] hover:text-black hidden lg:block">Cadastre-se</a>
+          <a href="#" className="text-pink-500 w-[100px] hover:text-pink-500 hover:underline hover:underline-offset-8 hidden lg:block">Cadastre-se</a>
           {/* Botão de entrar (somente em telas grandes) */}
           <a href="#" className="px-4 py-2 bg-pink-500 hover:bg-pink-900 text-white rounded hidden lg:block">Entrar</a>
           {/* Ícone de pesquisa (somente em telas pequenas) */}
@@ -80,11 +80,11 @@ function Header() {
 
       {/* Input de Pesquisa para dispositivos móveis */}
       <div id="searchInputMobile" className="hidden flex-col items-center w-full mt-4 px-4">
-        <input type="search" className="w-full max-w-lg p-2 border border-gray-300 rounded" placeholder="Pesquisar produto..." />
+        <input type="search" className="w-full max-w-lg p-2 border border-gray-500 rounded" placeholder="Pesquisar produto..." />
       </div>
 
       {/* Menu Dropdown para dispositivos móveis */}      
-      <div id="sidebar" className={`fixed inset-y-20 left-0 transform lg:hidden transition-transform bg-white duration-300 w-64
+      <div id="sidebar" className={`fixed inset-y-20 left-0 transform lg:hidden transition-transform bg-white duration-500 w-64
        h-screen flex flex-col z-40 space-y-2 mt-4 px-4 ${isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}>
         <div className='flex flex-col'>
@@ -99,10 +99,10 @@ function Header() {
             </button>
           </div>
           <ul className="flex flex-col space-y-2 text-pink-500font-semibold">
-            <li><a href="#" className="hover:text-black">Home</a></li>
-            <li><a href="#" className="hover:text-black">Produtos</a></li>
-            <li><a href="#" className="hover:text-black">Categorias</a></li>
-            <li><a href="#" className="hover:text-black">Meus Pedidos</a></li>
+            <li><a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Home</a></li>
+            <li><a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Produtos</a></li>
+            <li><a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Categorias</a></li>
+            <li><a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Meus Pedidos</a></li>
           </ul>
           <div className="flex flex-col items-center mt-64 gap-5 border-t-[1px] border-slate-500">
             {/* Botão de entrar */}
@@ -116,10 +116,10 @@ function Header() {
       {/* Links de navegação para dispositivos grandes */}
       <div className="flex flex-row gap-5 text-lg font-semibold text-pink-500">
         <div className="space-x-4 hidden lg:block">
-          <a href="#" className="hover:text-black">Home</a>
-          <a href="#" className="hover:text-black">Produtos</a>
-          <a href="#" className="hover:text-black">Categorias</a>
-          <a href="#" className="hover:text-black">Meus Pedidos</a>
+          <a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Home</a>
+          <a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Produtos</a>
+          <a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Categorias</a>
+          <a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Meus Pedidos</a>
         </div>
       </div>
     </header>
