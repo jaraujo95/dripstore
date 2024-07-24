@@ -5,7 +5,7 @@ import Categoria from "./Categoria";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProductListingPage from "./ProductListingPage";
-
+import NotDefault from "./NotFound";
 function Rotas() {
 
     return (
@@ -14,10 +14,10 @@ function Rotas() {
             <Routes>
                 <Route path="/" element={<Navigate to="/Home" />} />
                 <Route path="/Home" element={<Home></Home>}></Route>
-                <Route path="/Produtos" element={<Produto></Produto>}></Route>
+                <Route path="/Lista-Produtos" element={<ProductListingPage/>}></Route>
                 <Route path="/Categoria" element={<Categoria></Categoria>}></Route>
                 <Route path="/Lista-Produtos" element={<ProductListingPage/>} ></Route>
-                <Route path="*" component={() => <h1>404 Not Found</h1>} />
+                <Route path="*" element={<NotDefault></NotDefault>} />
             </Routes>
             <Footer />
         </>
