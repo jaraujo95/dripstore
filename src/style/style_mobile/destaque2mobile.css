@@ -1,0 +1,19 @@
+
+@media screen and (max-width: 500px){
+   .conde{
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    max-width: 600px;
+
+    border-radius: 10px;
+   
+   }
+   .conde::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+}
+
