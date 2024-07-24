@@ -91,7 +91,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="flex items-center justify-center border-t pt-4 pb-4">
-                <p>@ 2022 Digital College</p>
+                <p>@ 2024 Digital College</p>
             </div>
         </footer>
     )
