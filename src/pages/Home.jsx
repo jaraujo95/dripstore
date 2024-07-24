@@ -6,14 +6,13 @@ import Section from '../components/Section.jsx';
 import { ArrowRight } from "react-bootstrap-icons";
 import tenisOferta from '../assets/tenis-oferta-especial.svg'
 import Destaque2 from '../components/Destaque.jsx';
+import Gallery from '../components/Gallery.jsx';
 
 export default function Home() {
   return (
     <div className='body'>
       <Header />
-      <section className="section mt-10">
-        <div>HERO</div>
-      </section>
+      <Gallery />
 
       <div className='w-full bg-slate-100 pb-24'>
 
