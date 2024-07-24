@@ -34,9 +34,9 @@ function Header() {
 
         {/* Input de Pesquisa (somente em telas maiores que 700px) */}
         <div id="searchInput"
-          className="hidden sm:flex flex-row w-full items-center justify-center mx-4 rounded-md border border-slate-100 bg-slate-100 focus-within:border-red-600 focus-within:text-red-600">
+          className="hidden sm:flex flex-row w-full items-center justify-center mx-4 rounded-md border border-slate-200 bg-slate-200 focus-within:border-red-600 focus-within:text-red-600">
           <input
-            className="w-full p-2 mx-4 border-transparent rounded-md bg-slate-100 focus:outline-none text-black"
+            className="w-full p-2 mx-4 border-transparent rounded-md bg-slate-200 focus:outline-none text-black"
             placeholder="Pesquisar produto..." />
           <Search className='mr-5'/>
         </div>
@@ -126,9 +126,9 @@ function Header() {
       {/* Links de navegação para dispositivos grandes */}
       <div className="flex flex-row gap-5 text-lg font-semibold text-black">
         <div className="space-x-4 hidden lg:block">
-          < Link className="hover:text-pink-500 hover:underline hover:underline-offset-8" to="/">Home</Link>
-          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8" to="produtos">Produtos</Link>
-          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8"  to="categoria">Categorias</Link>
+          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8" to="/Home">Home</Link>
+          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8" to="Produtos">Produtos</Link>
+          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8"  to="Categoria">Categorias</Link>
           <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8">Meus Pedidos</Link>
         </div>
       </div>

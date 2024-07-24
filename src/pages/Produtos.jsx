@@ -1,4 +1,3 @@
-import Header from "../components/Header"
 function Produto(){
     return <>
     <h1>Produtosssss</h1></>

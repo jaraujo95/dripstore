@@ -1,18 +1,14 @@
-import '../pages/Home.css'
+import '../style/Home.css'
 import Destaques from '../components/Destaques.jsx'
-import Header from '../components/Header.jsx';
 import ProductListing from '../components/ProductListing.jsx';
 import Section from '../components/Section.jsx';
 import { ArrowRight } from "react-bootstrap-icons";
 import tenisOferta from '../assets/tenis-oferta-especial.svg'
 import Destaque2 from '../components/Destaque.jsx';
-import Footer from '../components/Footer.jsx'
-
-
 
 export default function Home() {
-  return (
 
+  return (
     <div className='body'>
       <section className="section mt-10">
         <div>HERO</div>
