@@ -1,6 +1,7 @@
 import Camisete from "../assets/ICONS/camiseta.png"
 import Calca from "../assets/ICONS/calca.png"
 import Fone from "../assets/ICONS/fone.png"
+import Tenis from "../assets/ICONS/tenis.png"
 import "../style/destaque2.css"
 import "../style/style_mobile/destaque2mobile.css"
 
@@ -28,7 +29,7 @@ export default function Destaque2() {
                         <p className="titulo-circulo">Headphones</p>
                     </div>
                     <div className="card-circulo">
-                        <div className="icon"><img src={Fone} alt="" /></div>
+                        <div className="icon"><img src={Tenis} alt="" /></div>
                         <p className="titulo-circulo"> Tenis</p>
                     </div>
                 </div>
