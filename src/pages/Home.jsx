@@ -1,30 +1,24 @@
-import '../pages/Home.css'
+import '../style/Home.css'
 import Destaques from '../components/Destaques.jsx'
-import Header from '../components/Header.jsx';
 import ProductListing from '../components/ProductListing.jsx';
 import Section from '../components/Section.jsx';
 import { ArrowRight } from "react-bootstrap-icons";
 import tenisOferta from '../assets/tenis-oferta-especial.svg'
 import Destaque2 from '../components/Destaque.jsx';
+import Gallery from '../components/Gallery.jsx';
 
 export default function Home() {
+
   return (
     <div className='body'>
-      <Header />
-      <section className="section mt-10">
-        <div>HERO</div>
-      </section>
 
+      <Gallery />
       <div className='w-full bg-slate-100 pb-24'>
 
         <Section title="Coleções em destaque">
           <Destaques />
           <Destaque2></Destaque2>
         </Section>
-
-        <section className='section'>
-          <div>COLECAO</div>
-        </section>
 
         <Section title="Produtos em alta" btnTitle="Ver todos" btn={<ArrowRight size={15} />}>
           <ProductListing />
@@ -73,10 +67,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <footer className="footer">
-        <div>FOOTER</div>
-      </footer>
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import { Cart, List, Search, X } from 'react-bootstrap-icons';
+import { Link } from 'react-router-dom';
+
 
 function Header() {
   const [carrinho, setcarrinho] = useState(['tennis,carrinho']);
@@ -12,7 +14,7 @@ function Header() {
 
   return (
     // Header do site
-    <header id='' className="w-full px-4 sm:px-[20px] md:px-[50px] lg:px-[70px] xl:px-[100px]">
+    <header id='' className="w-full px-4 sm:px-[20px] md:px-[50px] lg:px-[70px] xl:px-[100px] mb-5">
       {/* Barra de navegação */}
       <nav className="flex items-center justify-between py-5 bg-white gap-5">
         {/* Logo e Botão de Menu */}
@@ -32,13 +34,13 @@ function Header() {
 
         {/* Input de Pesquisa (somente em telas maiores que 700px) */}
         <div id="searchInput"
-          className="hidden sm:flex flex-row w-full items-center justify-center mx-4 rounded-md border border-slate-100 bg-slate-100 focus-within:border-red-600 focus-within:text-red-600">
+          className="hidden sm:flex flex-row w-full items-center justify-center mx-4 rounded-md border border-slate-200 bg-slate-200 focus-within:border-red-600 focus-within:text-red-600">
           <input
-            className="w-full p-2 mx-4 border-transparent rounded-md bg-slate-100 focus:outline-none text-black"
+            className="w-full p-2 mx-4 border-transparent rounded-md bg-slate-200 focus:outline-none text-black"
             placeholder="Pesquisar produto..." />
           <Search className='mr-5'/>
         </div>
-        <Search className='block sm:hidden text-slate-500 hover:text-red-700'/>
+        <Search className='block sm:hidden text-slate-500 hover:text-pink-500'/>
         {/* Botões */}
         <div className="flex items-center space-x-4">
           {/* Link para cadastro (somente em telas grandes) */}
@@ -124,12 +126,14 @@ function Header() {
       {/* Links de navegação para dispositivos grandes */}
       <div className="flex flex-row gap-5 text-lg font-semibold text-black">
         <div className="space-x-4 hidden lg:block">
-          <a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Home</a>
-          <a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Produtos</a>
-          <a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Categorias</a>
-          <a href="#" className="hover:text-pink-500 hover:underline hover:underline-offset-8">Meus Pedidos</a>
+          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8" to="/Home">Home</Link>
+          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8" to="Produtos">Produtos</Link>
+          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8"  to="Categoria">Categorias</Link>
+          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8">Meus Pedidos</Link>
         </div>
       </div>
+     
+   
     </header>
   );
 }
