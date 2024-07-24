@@ -14,7 +14,7 @@ function Header() {
 
   return (
     // Header do site
-    <header id='' className="w-full px-4 sm:px-[20px] md:px-[50px] lg:px-[70px] xl:px-[100px]">
+    <header id='' className="w-full px-4 sm:px-[20px] md:px-[50px] lg:px-[70px] xl:px-[100px] mb-5">
       {/* Barra de navegação */}
       <nav className="flex items-center justify-between py-5 bg-white gap-5">
         {/* Logo e Botão de Menu */}
