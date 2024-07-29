@@ -4,8 +4,8 @@ import ProductListing from '../components/ProductListing.jsx';
 import Section from '../components/Section.jsx';
 import { ArrowRight } from "react-bootstrap-icons";
 import tenisOferta from '../assets/tenis-oferta-especial.svg'
-import Destaque2 from '../components/Destaque.jsx';
 import Gallery from '../components/Gallery.jsx';
+import Colecao from '../components/Colecao.jsx';
 
 export default function Home() {
 
@@ -17,7 +17,10 @@ export default function Home() {
 
         <Section title="Coleções em destaque">
           <Destaques />
-          <Destaque2></Destaque2>
+        </Section>
+
+        <Section titleCenter="Coleções em destaque">
+          <Colecao/>
         </Section>
 
         <Section title="Produtos em alta" btnTitle="Ver todos" btn={<ArrowRight size={15} />}>
@@ -44,7 +47,7 @@ export default function Home() {
 
           <div
             className="flex flex-col gap-2 lg:py-4 items-center text-center lg:text-left lg:items-start w-full">
-            <p className="text-xl text-red-500 font-bold">
+            <p className="text-xl text-pink-500 font-bold">
               Oferta especial
             </p>
 
@@ -60,7 +63,7 @@ export default function Home() {
             </p>
             <div className="w-full px-12 sm:px-0">
               <button
-                className="bg-red-500 text-white font-bold py-2 rounded hover:bg-red-600 w-full sm:w-[250px]">
+                className="bg-pink-500  text-white font-bold py-2 rounded hover:bg-pink-900  w-full sm:w-[250px]">
                 Ver Ofertas
               </button>
             </div>
