@@ -1,13 +1,12 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Home";
-import Produto from "./Produtos";
 import Categoria from "./Categoria";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProductListingPage from "./ProductListingPage";
 import NotDefault from "./NotFound";
-function Rotas() {
 
+function Rotas() {
     return (
         <>
             <Header />
@@ -22,6 +21,5 @@ function Rotas() {
             <Footer />
         </>
     )
-
 }
 export default Rotas
