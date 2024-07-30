@@ -11,7 +11,7 @@ function Rotas() {
         <>
             <Header />
             <Routes>
-                <Route path="/dripstore/" element={<Navigate to="/Home" />} />
+                <Route path="/" element={<Navigate to="/Home" />} />
                 <Route path="/Home" element={<Home></Home>}></Route>
                 <Route path="/Lista-Produtos" element={<ProductListingPage/>}></Route>
                 <Route path="/Categoria" element={<Categoria></Categoria>}></Route>
