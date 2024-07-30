@@ -4,7 +4,7 @@ export default function Section({children, title, titleCenter, btnTitle, btn}) {
 
     const navigate = useNavigate();
     const handleButtonClick = () => {
-    navigate('/dripstore/Lista-Produtos');
+    navigate('/Lista-Produtos');
     };
     
     return (
