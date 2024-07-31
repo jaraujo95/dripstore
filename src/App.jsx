@@ -6,7 +6,7 @@ import Rotas from './pages/Rotas'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-<BrowserRouter basename="https://albertverso.github.io/dripstore">
+<BrowserRouter basename="/dripstore">
    <Rotas></Rotas>
 </BrowserRouter>
 )
