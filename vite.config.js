@@ -4,7 +4,7 @@ import tailwindcss from "tailwindcss";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "https://albertverso.github.io/dripstore",
+  base: "/dripstore/",
   plugins: [react()],
   css: {
     postcss: {
