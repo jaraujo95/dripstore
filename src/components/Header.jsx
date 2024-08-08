@@ -128,7 +128,7 @@ function Header() {
         <div className="space-x-4 hidden lg:block">
           <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8" to="/Home">Home</Link>
           <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8" to="/Lista-Produtos">Produtos</Link>
-          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8"  to="Categoria">Categorias</Link>
+          <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8"  to="/Categoria">Categorias</Link>
           <Link className="hover:text-pink-500 hover:underline hover:underline-offset-8">Meus Pedidos</Link>
         </div>
       </div>
